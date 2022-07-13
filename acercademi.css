@@ -1,0 +1,3596 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: white;
+	font-size: 5px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+nav {
+	width: 100%;
+	height: auto;
+	display: flex;
+	background: white;
+	box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.1);
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 10;
+	transition: all 300ms ease;
+}
+.contenedor-menu {
+	width: 1200px;
+	height: auto;
+	padding: 0.8% 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 300ms ease;
+}
+.logo {
+	width: 430px;
+	background: url(images/logo-color.png);
+	background-size: cover;
+	padding-right: 0.5%;
+	height: auto;
+	transition: all 300ms ease;
+}
+.logo img {
+	width: 100%;
+	filter: opacity(0%);
+}
+.menu {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: flex-end;
+}
+.menu a {
+	font-size: 3em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 800;
+	color: #2B2D42;
+	border-radius: 20px;
+	text-decoration: none;
+	margin: 0 0;
+	margin-left: 4%;
+	margin-right: 0;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	transition: .5s ease all;
+}
+.menu .boton1 {
+	width: 15.5%;
+	padding: 0 0;
+}
+.menu .boton2 {
+	width: 25%;
+	padding: 0 0;
+}
+.menu .boton3 {
+	width: 14%;
+	padding: 0 0;
+}
+.menu a:hover {
+	color: #00A19A;
+	transition: .5s ease all;
+}
+nav #icon {
+	color: #2B2D42;
+	font-size: 5em;
+	float: right;
+	cursor: pointer;
+	display: none;
+}
+
+h1 {
+	font-size: 8em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 800;
+	color: white;
+}
+h3 {
+	font-size: 4em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 500;
+	color: white;
+}
+
+main {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+h2 {
+	font-size: 6.5em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 800;
+	color: #2B2D42;
+}
+p {
+	font-size: 3.5em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 500;
+	color: #2B2D42;
+}
+.informacion-doctor {
+	width: 1190px;
+	height: auto;
+	transition: all 300ms ease;
+}
+.doctor {
+	width: 100%;
+	height: auto;
+	padding: 0 0;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+.doctor-imagen {
+	width: 100%;
+	height: auto;
+}
+.doctor-imagen h2 {
+	width: 100%;
+	text-align: center;
+	color: #00A19A;
+	font-size: 8em;
+}
+.doctor-imagen img {
+	margin-top: 4%;
+	width: 100%;
+}
+.doctor-info {
+	width: 80%;
+	height: auto;
+	padding: 0 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.doctor-info h2{
+	text-align: center;
+	color: #00A19A;
+	font-size: 8em;
+}
+.doctor-info p {
+	text-align: center;
+}
+.doctor-info a {
+	display: flex;
+	width: 19%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0 0;
+	padding: 0.7% 0;
+	margin-top: 3%;
+	font-size: 3.2em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 700;
+	color: white;
+	background: #00A19A;
+	border: #00A19A 2px solid;
+	text-decoration: none;
+	border-radius: 20px;
+	transition: .3s ease all;
+}
+.doctor-info a:hover {
+	color: #00A19A;
+	background: white;
+	border: #00A19A 2px solid;
+	transition: .3s ease all;
+}
+
+footer {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contenedor-pie {
+	width: 1500px;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid #2B2D42;
+	transition: all 300ms ease;
+}
+.piedepagina {
+	width: 1190px;
+	height: auto;
+	padding: 0 0;
+	padding-top: 4%;
+	padding-bottom: 8%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	transition: all 300ms ease;
+}
+.logopie {
+	width: 25%;
+	height: auto;
+}
+.logopie img {
+	width: 100%;
+}
+.contacto {
+	width: 17%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.wrapper4 .button4 {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	background: #2B2D42;
+	border-radius: 50px;
+	margin-bottom: 40px;
+	cursor: pointer;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	transition: all 0.3s ease-out;
+}
+.wrapper4 .button4:hover {
+	width: 200px;
+}
+.wrapper4 .button4 .icon4 {
+	display: inline-flex;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	justify-content: center;
+	border-radius: 50px;
+	line-height: 50px;
+	box-sizing: border-box;
+	transition: .3s ease-in-out all;
+}
+.wrapper4 .button4:nth-child(1):hover .icon4 {
+	background: #00A19A;
+	transition: .3s ease-in-out all;
+}
+.wrapper4 .button4 .icon4 a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	justify-content: center;
+	transform: scale(1.2);
+	line-height: 50px;
+	font-size: 20px;
+	transition: all 0.3s ease-out;
+}
+.wrapper4 .button4:hover .icon4 a{
+	color: white;
+}
+.wrapper4 .button4 span {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 700;
+	font-size: 3.5em;
+	margin-left: 10px;
+	transition: all 0.3s ease-out;
+}
+.wrapper4 .button4:nth-child(1) span {
+	color: white;
+}
+.wrapper4 .button4 a {
+	text-decoration: none;
+}
+.wrapper2 .button2 {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	background: #2B2D42;
+	border-radius: 50px;
+	margin-bottom: 40px;
+	cursor: pointer;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	transition: all 0.3s ease-out;
+}
+.wrapper2 .button2:hover {
+	width: 200px;
+}
+.wrapper2 .button2 .icon2 { 
+	display: inline-flex;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	justify-content: center;
+	border-radius: 50px;
+	line-height: 50px;
+	box-sizing: border-box;
+	transition: .3s ease-in-out all;
+}
+.wrapper2 .button2:nth-child(1):hover .icon2 {
+	background: #00A19A;
+	transition: .3s ease-in-out all;
+}
+.wrapper2 .button2 .icon2 a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	justify-content: center;
+	transform: scale(1.2);
+	line-height: 50px;
+	font-size: 20px;
+	transition: all 0.3s ease-out;
+}
+.wrapper2 .button2:hover .icon2 a {
+	color: white;
+}
+.wrapper2 .button2 span {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 700;
+	font-size: 3.5em;
+	margin-left: 10px;
+	transition: all 0.3s ease-out;
+}
+.wrapper2 .button2:nth-child(1) span {
+	color: white;
+}
+.wrapper2 .button2 a {
+	text-decoration: none;
+}
+.wrapper3 .button3 {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	background: #2B2D42;
+	border-radius: 50px;
+	margin-bottom: 40px;
+	cursor: pointer;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	transition: all 0.3s ease-out;
+}
+.wrapper3 .button3:hover{
+	width: 200px;
+}
+.wrapper3 .button3 .icon3 {
+	display: inline-flex;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	justify-content: center;
+	border-radius: 50px;
+	line-height: 50px;
+	box-sizing: border-box;
+	transition: .3s ease-in-out all;
+}
+.wrapper3 .button3:nth-child(1):hover .icon3 {
+	background: #00A19A;
+	transition: .3s ease-in-out all;
+}
+.wrapper3 .button3 .icon3 a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	justify-content: center;
+	transform: scale(1.2);
+	line-height: 50px;
+	font-size: 20px;
+	transition: all 0.3s ease-out;
+}
+.wrapper3 .button3:hover .icon3 a {
+	color: white;
+}
+.wrapper3 .button3 span {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 700;
+	font-size: 3.5em;
+	margin-left: 10px;
+	transition: all 0.3s ease-out;
+}
+.wrapper3 .button3:nth-child(1) span {
+	color: white;
+}
+.wrapper3 .button3 a {
+	text-decoration: none;
+}
+
+/*--------- PANTALLAS O LAPTOPS GRANDES HORIZONTALMENTE -------- */
+
+@media screen and (max-width: 1700px) and (min-width: 1367px) and (orientation: landscape) {
+
+	.doctor-imagen h2 {
+		font-size: 7.7em;
+	}
+	.doctor-info h2{
+		font-size: 7.7em;
+	}
+	.contenedor-pie {
+		width: 1350px;
+		transition: all 300ms ease;
+	}
+	.piedepagina {
+		width: 1175px;
+		transition: all 300ms ease;
+	}
+}
+
+/*--------- PANTALLAS O LAPTOPS GRANDES HORIZONTALMENTE -------- */
+
+@media screen and (max-width: 1450px) and (min-width: 1367px) and (orientation: landscape) {
+
+	.contenedor-menu {
+		width: 1020px;
+		transition: all 300ms ease;
+	}
+	.logo {
+		width: 400px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: flex-end;
+	}
+	.menu a {
+		font-size: 2.9em;
+		transition: .5s ease all;
+	}
+	.menu .boton1 {
+		width: 17%;
+	}
+	.menu .boton2 {
+		width: 27.5%;
+	}
+	.menu .boton3 {
+		width: 16.5%;
+	}
+
+	.informacion-doctor {
+		width: 1000px;
+	}
+	.doctor {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
+	.doctor-imagen {
+		width: 100%;
+		height: auto;
+	}
+	.doctor-imagen h2 {
+		font-size: 7.5em;
+	}
+	.doctor-imagen img {
+		margin-top: 4%;
+		width: 100%;
+	}
+	.doctor-info {
+		width: 80%;
+		height: auto;
+		padding: 0 10%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.doctor-info h2{
+		font-size: 7.5em;
+	}
+	.doctor-info p {
+		text-align: center;
+	}
+	.doctor-info a {
+		width: 21%;
+		margin: 0 0;
+		padding: 0.8% 0;
+		margin-top: 3%;
+		font-size: 3.2em;
+	}
+	.doctor-info a:hover {
+		color: #00A19A;
+		background: white;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+	
+	.contenedor-pie {
+		width: 1100px;
+		transition: all 300ms ease;
+	}
+	.piedepagina {
+		width: 1000px;
+		transition: all 300ms ease;
+	}
+
+}
+
+/*--------- LAPTOPS PEQUEÑAS O TABLETS GRANDES HORIZONTALMENTE -------- */
+
+@media screen and (max-width: 1366px) and (min-width: 1051px) and (orientation: landscape) {
+
+	.contenedor-menu {
+		width: 1000px;
+	}
+	.logo {
+		width: 400px;
+		transition: all 300ms ease;
+	}
+	.menu a {
+		font-size: 2.8em;
+		transition: .5s ease all;
+	}
+	.menu .boton1 {
+		width: 17%;
+		padding: 1% 1%;
+	}
+	.menu .boton2 {
+		width: 28%;
+		padding: 1% 1%;
+	}
+	.menu .boton3 {
+		width: 16%;
+		padding: 1% 1%;
+	}
+
+	.informacion-doctor {
+		width: 980px;
+	}
+	.doctor {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
+	.doctor-imagen {
+		width: 100%;
+		height: auto;
+	}
+	.doctor-imagen h2 {
+		font-size: 7.5em;
+	}
+	.doctor-imagen img {
+		margin-top: 4%;
+		width: 100%;
+	}
+	.doctor-info {
+		width: 80%;
+		height: auto;
+		padding: 0 10%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.doctor-info h2{
+		font-size: 7.5em;
+	}
+	.doctor-info p {
+		text-align: center;
+	}
+	.doctor-info a {
+		width: 21%;
+		margin: 0 0;
+		padding: 0.8% 0;
+		margin-top: 3%;
+		font-size: 3.2em;
+	}
+	.doctor-info a:hover {
+		color: #00A19A;
+		background: white;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+
+	.contenedor-pie {
+		width: 1100px;
+	}
+	.piedepagina {
+		width: 980px;
+	}
+
+}
+/* ---------- ESTILOS SIN HOVER (SIN RESPUESTA) ---------*/
+
+@media (hover: none) and (max-width: 1366px) and (min-width: 1051px) and (orientation: landscape) {
+
+	.menu a:hover {
+		color: #2B2D42;
+		background: transparent;
+	}
+	.doctor-info a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+	.wrapper4 .button4:hover {
+		width: 50px;
+	}
+	.wrapper4 .button4:nth-child(1):hover .icon4 {
+		background: #2B2D42;
+	}
+	.wrapper2 .button2:hover {
+		width: 50px;
+	}
+	.wrapper2 .button2:nth-child(1):hover .icon2 {
+		background: #2B2D42;
+	}
+	.wrapper3 .button3:hover {
+		width: 50px;
+	}
+	.wrapper3 .button3:nth-child(1):hover .icon3 {
+		background: #2B2D42;
+	}
+
+}
+/*--------- TABLETS HORIZONTALMENTE -------- */
+
+@media screen and (max-width: 1050px) and (min-width: 960px) and (orientation: landscape) {
+
+	.contenedor-menu {
+		width: 900px;
+		padding: 1.5% 0;
+	}
+	.logo {
+		width: 350px;
+		transition: all 300ms ease;
+	}
+	.menu a {
+		font-size: 2.7em;
+		transition: .5s ease all;
+	}
+	.menu .boton1 {
+		width: 18%;
+		padding: 1% 1%;
+	}
+	.menu .boton2 {
+		width: 29%;
+		padding: 1% 1%;
+	}
+	.menu .boton3 {
+		width: 17%;
+		padding: 1% 1%;
+	}
+
+	.informacion-doctor {
+		width: 880px;
+	}
+	.doctor {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
+	.doctor-imagen {
+		width: 100%;
+		height: auto;
+	}
+	.doctor-imagen h2 {
+		font-size: 7em;
+	}
+	.doctor-imagen img {
+		margin-top: 4%;
+		width: 100%;
+	}
+	.doctor-info {
+		width: 80%;
+		height: auto;
+		padding: 0 10%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.doctor-info h2{
+		font-size: 7em;
+	}
+	.doctor-info p {
+		text-align: center;
+	}
+	.doctor-info a {
+		width: 21%;
+		margin: 0 0;
+		padding: 0.8% 0;
+		margin-top: 3%;
+		font-size: 3em;
+	}
+	.doctor-info a:hover {
+		color: #00A19A;
+		background: white;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+
+	.logopie {
+		width: 28%;
+		height: auto;
+	}
+	.contacto {
+		width: 17%;
+	}
+	.contenedor-pie {
+		width: 970px;
+	}
+	.piedepagina {
+		width: 880px;
+	}
+
+}
+/* ---------- ESTILOS SIN HOVER (SIN RESPUESTA) ---------*/
+
+@media (hover: none) and (max-width: 1051px) and (min-width: 960px) and (orientation: landscape) {
+
+	.menu a:hover {
+		color: #2B2D42;
+		background: transparent;
+	}
+	.doctor-info a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+	.wrapper4 .button4:hover {
+		width: 50px;
+	}
+	.wrapper4 .button4:nth-child(1):hover .icon4 {
+		background: #2B2D42;
+	}
+	.wrapper2 .button2:hover {
+		width: 50px;
+	}
+	.wrapper2 .button2:nth-child(1):hover .icon2 {
+		background: #2B2D42;
+	}
+	.wrapper3 .button3:hover {
+		width: 50px;
+	}
+	.wrapper3 .button3:nth-child(1):hover .icon3 {
+		background: #2B2D42;
+	}
+
+}
+
+/*--------- CELULARES GRANDES HORIZONTALMENTE -------- */
+
+@media screen and (max-width: 960px) and (min-width: 790px) and (orientation: landscape)  {
+
+	.contenedor-menu {
+		width: 700px;
+		padding: 2% 0;
+	}
+	.logo {
+		width: 280px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 86px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.8em;
+		color: white;
+		margin: 0 0;
+		margin-top: 4%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	.menu .boton1 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton2 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton3 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu a:hover {
+		font-size: 2.8em;
+		color: white;
+		background: transparent;
+		transition: .5s ease all;
+	}
+
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+
+	
+	.informacion-doctor {
+		width: 680px;
+	}
+	.doctor {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 17%;
+		padding-bottom: 17%;
+	}
+	.doctor-imagen {
+		width: 100%;
+		height: auto;
+	}
+	.doctor-imagen h2 {
+		font-size: 6.5em;
+	}
+	.doctor-imagen img {
+		margin-top: 4%;
+		margin-bottom: 1%;
+		width: 100%;
+	}
+	.doctor-info {
+		width: 98%;
+		height: auto;
+		padding: 0 1%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.doctor-info h2{
+		font-size: 6.5em;
+	}
+	.doctor-info p {
+		text-align: center;
+	}
+	.doctor-info a {
+		width: 22%;
+		margin: 0 0;
+		padding: 0.8% 0;
+		margin-top: 3%;
+		font-size: 2.8em;
+	}
+	.doctor-info a:hover {
+		color: #00A19A;
+		background: white;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+
+	.logopie {
+		width: 36%;
+		height: auto;
+	}
+	.contacto {
+		width: 17%;
+	}
+	.contenedor-pie {
+		width: 800px;
+	}
+	.piedepagina {
+		width: 680px;
+	}
+	.wrapper4 .button4{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover{
+		width: 150px;
+	  }
+	  .wrapper4 .button4 .icon4{
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4:nth-child(1):hover .icon4{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4 .icon4 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1.1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover .icon4 a{
+		color: white;
+	  }
+	  .wrapper4 .button4 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper4 .button4 a {
+		  text-decoration: none;
+	  }
+	  .wrapper2 .button2{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover{
+		width: 150px;
+	  }
+	  .wrapper2 .button2 .icon2{
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2:nth-child(1):hover .icon2{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2 .icon2 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover .icon2 a{
+		color: white;
+	  }
+	  .wrapper2 .button2 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper2 .button2 a {
+		  text-decoration: none;
+	  }
+	  .wrapper3 .button3 {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover{
+		width: 150px;
+	  }
+	  .wrapper3 .button3 .icon3 {
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3:nth-child(1):hover .icon3{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3 .icon3 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover .icon3 a{
+		color: white;
+	  }
+	  .wrapper3 .button3 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper3 .button3 a {
+		  text-decoration: none;
+	  }
+
+}
+/* ---------- ESTILOS SIN HOVER (SIN RESPUESTA) ---------*/
+
+@media (hover: none) and (max-width: 960px) and (min-width: 790px) and (orientation: landscape) {
+
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.doctor-info a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+	.wrapper4 .button4:hover {
+		width: 40px;
+	}
+	.wrapper4 .button4:nth-child(1):hover .icon4 {
+		background: #2B2D42;
+	}
+	.wrapper2 .button2:hover {
+		width: 40px;
+	}
+	.wrapper2 .button2:nth-child(1):hover .icon2 {
+		background: #2B2D42;
+	}
+	.wrapper3 .button3:hover {
+		width: 40px;
+	}
+	.wrapper3 .button3:nth-child(1):hover .icon3 {
+		background: #2B2D42;
+	}
+
+}
+
+/*--------- CELULARES MEDIANOS HORIZONTALMENTE -------- */
+
+@media screen and (max-width: 789px) and (min-width: 669px) and (orientation: landscape)  {
+
+	.contenedor-menu {
+		width: 610px;
+		padding: 2% 0;
+	}
+	.logo {
+		width: 250px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 74px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.7em;
+		color: white;
+		margin: 0 0;
+		margin-top: 4%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	.menu .boton1 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton2 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton3 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu a:hover {
+		font-size: 2.8em;
+		color: white;
+		background: transparent;
+		transition: .5s ease all;
+	}
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+
+
+	.informacion-doctor {
+		width: 590px;
+	}
+	.doctor {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 17%;
+		padding-bottom: 17%;
+	}
+	.doctor-imagen {
+		width: 100%;
+		height: auto;
+	}
+	.doctor-imagen h2 {
+		font-size: 6em;
+	}
+	.doctor-imagen img {
+		margin-top: 4%;
+		margin-bottom: 1%;
+		width: 100%;
+	}
+	.doctor-info {
+		width: 98%;
+		height: auto;
+		padding: 0 1%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.doctor-info h2{
+		font-size: 6em;
+	}
+	.doctor-info p {
+		font-size: 3em;
+		text-align: center;
+	}
+	.doctor-info a {
+		width: 25%;
+		margin: 0 0;
+		padding: 0.8% 0;
+		margin-top: 3%;
+		font-size: 2.7em;
+	}
+	.doctor-info a:hover {
+		color: #00A19A;
+		background: white;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+
+
+	.logopie {
+		width: 38%;
+		height: auto;
+	}
+	.contacto {
+		width: 36%;
+	}
+	.contenedor-pie {
+		width: 700px;
+	}
+	.piedepagina {
+		width: 610px;
+	}
+	.wrapper4 .button4{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover{
+		width: 150px;
+	  }
+	  .wrapper4 .button4 .icon4{
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4:nth-child(1):hover .icon4{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4 .icon4 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1.1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover .icon4 a{
+		color: white;
+	  }
+	  .wrapper4 .button4 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper4 .button4 a {
+		  text-decoration: none;
+	  }
+	  .wrapper2 .button2{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover{
+		width: 150px;
+	  }
+	  .wrapper2 .button2 .icon2{
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2:nth-child(1):hover .icon2{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2 .icon2 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover .icon2 a{
+		color: white;
+	  }
+	  .wrapper2 .button2 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper2 .button2 a {
+		  text-decoration: none;
+	  }
+	  .wrapper3 .button3 {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover{
+		width: 150px;
+	  }
+	  .wrapper3 .button3 .icon3 {
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3:nth-child(1):hover .icon3{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3 .icon3 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover .icon3 a{
+		color: white;
+	  }
+	  .wrapper3 .button3 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper3 .button3 a {
+		  text-decoration: none;
+	  }
+
+}
+
+/* ---------- ESTILOS SIN HOVER (SIN RESPUESTA) ---------*/
+
+@media (hover: none) and (max-width: 789px) and (min-width: 669px) and (orientation: landscape) {
+
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.doctor-info a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+	.wrapper4 .button4:hover {
+		width: 40px;
+	}
+	.wrapper4 .button4:nth-child(1):hover .icon4 {
+		background: #2B2D42;
+	}
+	.wrapper2 .button2:hover {
+		width: 40px;
+	}
+	.wrapper2 .button2:nth-child(1):hover .icon2 {
+		background: #2B2D42;
+	}
+	.wrapper3 .button3:hover {
+		width: 40px;
+	}
+	.wrapper3 .button3:nth-child(1):hover .icon3 {
+		background: #2B2D42;
+	}
+
+}
+
+/*--------- CELULARES PEQUEÑOS HORIZONTALMENTE -------- */
+
+@media screen and (max-width: 668px) and (min-width: 560px) and (orientation: landscape)  {
+
+	.contenedor-menu {
+		width: 530px;
+		padding: 3% 0;
+	}
+	.logo {
+		width: 220px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 75px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.5em;
+		color: white;
+		margin: 0 0;
+		margin-top: 4%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	.menu .boton1 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton2 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton3 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu a:hover {
+		font-size: 2.8em;
+		color: white;
+		background: transparent;
+		transition: .5s ease all;
+	}
+
+
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+
+
+	.informacion-doctor {
+		width: 520px;
+	}
+	.doctor {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 19%;
+		padding-bottom: 19%;
+	}
+	.doctor-imagen {
+		width: 100%;
+		height: auto;
+	}
+	.doctor-imagen h2 {
+		font-size: 5.5em;
+	}
+	.doctor-imagen img {
+		margin-top: 4%;
+		margin-bottom: 1%;
+		width: 100%;
+	}
+	.doctor-info {
+		width: 98%;
+		height: auto;
+		padding: 0 1%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.doctor-info h2{
+		font-size: 5.5em;
+	}
+	.doctor-info p {
+		font-size: 3em;
+		text-align: center;
+	}
+	.doctor-info a {
+		width: 28%;
+		margin: 0 0;
+		padding: 0.8% 0;
+		margin-top: 3%;
+		font-size: 2.6em;
+	}
+	.doctor-info a:hover {
+		color: #00A19A;
+		background: white;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+
+
+	.logopie {
+		width: 42%;
+		height: auto;
+	}
+	.contacto {
+		width: 42%;
+	}
+	.contenedor-pie {
+		width: 550px;
+	}
+	.piedepagina {
+		width: 520px;
+	}
+	.wrapper4 .button4{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover{
+		width: 150px;
+	  }
+	  .wrapper4 .button4 .icon4{
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4:nth-child(1):hover .icon4{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4 .icon4 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1.1);
+		  line-height: 40px;
+		font-size: 20px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover .icon4 a{
+		color: white;
+	  }
+	  .wrapper4 .button4 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper4 .button4 a {
+		  text-decoration: none;
+	  }
+	  .wrapper2 .button2{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover{
+		width: 150px;
+	  }
+	  .wrapper2 .button2 .icon2{
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2:nth-child(1):hover .icon2{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2 .icon2 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 20px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover .icon2 a{
+		color: white;
+	  }
+	  .wrapper2 .button2 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper2 .button2 a {
+		  text-decoration: none;
+	  }
+	  .wrapper3 .button3 {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover{
+		width: 150px;
+	  }
+	  .wrapper3 .button3 .icon3 {
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3:nth-child(1):hover .icon3{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3 .icon3 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 20px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover .icon3 a{
+		color: white;
+	  }
+	  .wrapper3 .button3 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper3 .button3 a {
+		  text-decoration: none;
+	  }
+
+}
+
+/* ---------- ESTILOS SIN HOVER (SIN RESPUESTA) ---------*/
+
+@media (hover: none) and (max-width: 668px) and (min-width: 560px) and (orientation: landscape) {
+
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.doctor-info a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+	.wrapper4 .button4:hover {
+		width: 40px;
+	}
+	.wrapper4 .button4:nth-child(1):hover .icon4 {
+		background: #2B2D42;
+	}
+	.wrapper2 .button2:hover {
+		width: 40px;
+	}
+	.wrapper2 .button2:nth-child(1):hover .icon2 {
+		background: #2B2D42;
+	}
+	.wrapper3 .button3:hover {
+		width: 40px;
+	}
+	.wrapper3 .button3:nth-child(1):hover .icon3 {
+		background: #2B2D42;
+	}
+
+}
+
+/*--------- TABLES GRANDES VERTICALMENTE -------- */
+
+@media screen and (max-width: 1024px) and (min-width: 835px) and (orientation: portrait)  {
+
+	.contenedor-menu {
+		width: 850px;
+		padding: 1.7% 0;
+	}
+	.logo {
+		width: 320px;
+		transition: all 300ms ease;
+	}
+	.menu a {
+		font-size: 2.8em;
+		transition: .5s ease all;
+	}
+	.menu .boton1 {
+		width: 18%;
+	}
+	.menu .boton2 {
+		width: 30%;
+	}
+	.menu .boton3 {
+		width: 17%;
+	}
+	
+	.informacion-doctor {
+		width: 830px;
+	}
+	.doctor {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 12%;
+		padding-bottom: 12%;
+	}
+	.doctor-imagen {
+		width: 100%;
+		height: auto;
+	}
+	.doctor-imagen h2 {
+		font-size: 7em;
+	}
+	.doctor-imagen img {
+		margin-top: 4%;
+		width: 100%;
+	}
+	.doctor-info {
+		width: 80%;
+		height: auto;
+		padding: 0 10%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.doctor-info h2{
+		font-size: 7em;
+	}
+	.doctor-info p {
+		text-align: center;
+	}
+	.doctor-info a {
+		width: 24%;
+		margin: 0 0;
+		padding: 0.8% 0;
+		margin-top: 3%;
+		font-size: 3em;
+	}
+	.doctor-info a:hover {
+		color: #00A19A;
+		background: white;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+
+
+	.logopie {
+		width: 28%;
+		height: auto;
+	}
+	.contacto {
+		width: 17%;
+	}
+	.contenedor-pie {
+		width: 920px;
+	}
+	.piedepagina {
+		width: 830px;
+	}
+
+}
+
+/* ---------- ESTILOS SIN HOVER (SIN RESPUESTA) ---------*/
+
+@media (hover: none) and (max-width: 1024px) and (min-width: 835px) and (orientation: portrait) {
+
+	.menu a:hover {
+		color: #2B2D42;
+		background: transparent;
+	}
+	.doctor-info a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+	.wrapper4 .button4:hover {
+		width: 50px;
+	}
+	.wrapper4 .button4:nth-child(1):hover .icon4 {
+		background: #2B2D42;
+	}
+	.wrapper2 .button2:hover {
+		width: 50px;
+	}
+	.wrapper2 .button2:nth-child(1):hover .icon2 {
+		background: #2B2D42;
+	}
+	.wrapper3 .button3:hover {
+		width: 50px;
+	}
+	.wrapper3 .button3:nth-child(1):hover .icon3 {
+		background: #2B2D42;
+	}
+
+}
+
+/*--------- TABLES MEDIANAS VERTICALMENTE -------- */
+
+@media screen and (max-width: 834px) and (min-width: 769px) and (orientation: portrait)  {
+
+	.contenedor-menu {
+		width: 700px;
+		padding: 1.7% 0;
+	}
+	.logo {
+		width: 280px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 77px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.8em;
+		color: white;
+		margin: 0 0;
+		margin-top: 4%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	.menu .boton1 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton2 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton3 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu a:hover {
+		font-size: 2.8em;
+		color: white;
+		background: transparent;
+		transition: .5s ease all;
+	}
+
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+
+	
+	.informacion-doctor {
+		width: 680px;
+	}
+	.doctor {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 12%;
+		padding-bottom: 12%;
+	}
+	.doctor-imagen {
+		width: 100%;
+		height: auto;
+	}
+	.doctor-imagen h2 {
+		font-size: 6.5em;
+	}
+	.doctor-imagen img {
+		margin-top: 4%;
+		width: 100%;
+	}
+	.doctor-info {
+		width: 80%;
+		height: auto;
+		padding: 0 10%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.doctor-info h2{
+		font-size: 6.5em;
+	}
+	.doctor-info p {
+		text-align: center;
+	}
+	.doctor-info a {
+		width: 26%;
+		margin: 0 0;
+		padding: 0.8% 0;
+		margin-top: 3%;
+		font-size: 2.8em;
+	}
+	.doctor-info a:hover {
+		color: #00A19A;
+		background: white;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+	
+
+	.logopie {
+		width: 38%;
+		height: auto;
+	}
+	.contacto {
+		width: 35%;
+	}
+	.contenedor-pie {
+		width: 750px;
+	}
+	.piedepagina {
+		width: 680px;
+	}
+
+}
+
+/* ---------- ESTILOS SIN HOVER (SIN RESPUESTA) ---------*/
+
+@media (hover: none) and (max-width: 834px) and (min-width: 769px) and (orientation: portrait) {
+
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.doctor-info a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+	.wrapper4 .button4:hover {
+		width: 50px;
+	}
+	.wrapper4 .button4:nth-child(1):hover .icon4 {
+		background: #2B2D42;
+	}
+	.wrapper2 .button2:hover {
+		width: 50px;
+	}
+	.wrapper2 .button2:nth-child(1):hover .icon2 {
+		background: #2B2D42;
+	}
+	.wrapper3 .button3:hover {
+		width: 50px;
+	}
+	.wrapper3 .button3:nth-child(1):hover .icon3 {
+		background: #2B2D42;
+	}
+
+}
+
+/*--------- TABLES PEQUEÑAS VERTICALMENTE -------- */
+
+@media screen and (max-width: 769px) and (min-width: 430px) and (orientation: portrait)  {
+
+	.contenedor-menu {
+		width: 640px;
+		padding: 1.7% 0;
+	}
+	.logo {
+		width: 280px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 73px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.8em;
+		color: white;
+		margin: 0 0;
+		margin-top: 4%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+
+	.menu .boton1 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton2 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton3 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu a:hover {
+		font-size: 2.8em;
+		color: white;
+		background: transparent;
+		transition: .5s ease all;
+	}
+
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+
+	.informacion-doctor {
+		width: 620px;
+	}
+	.doctor {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 15%;
+		padding-bottom: 15%;
+	}
+	.doctor-imagen {
+		width: 100%;
+		height: auto;
+	}
+	.doctor-imagen h2 {
+		font-size: 6em;
+	}
+	.doctor-imagen img {
+		margin-top: 4%;
+		width: 100%;
+	}
+	.doctor-info {
+		width: 80%;
+		height: auto;
+		padding: 0 10%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.doctor-info h2{
+		font-size: 6em;
+	}
+	.doctor-info p {
+		font-size: 3.3em;
+		text-align: center;
+	}
+	.doctor-info a {
+		width: 28%;
+		margin: 0 0;
+		padding: 0.8% 0;
+		margin-top: 3%;
+		font-size: 2.7em;
+	}
+	.doctor-info a:hover {
+		color: #00A19A;
+		background: white;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+
+	.logopie {
+		width: 40%;
+		height: auto;
+	}
+	.contacto {
+		width: 38%;
+	}
+	.contenedor-pie {
+		width: 690px;
+	}
+	.piedepagina {
+		width: 620px;
+	}
+	.wrapper4 .button4{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover{
+		width: 150px;
+	  }
+	  .wrapper4 .button4 .icon4{
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4:nth-child(1):hover .icon4{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4 .icon4 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover .icon4 a{
+		color: white;
+	  }
+	  .wrapper4 .button4 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.5em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper4 .button4 a {
+		  text-decoration: none;
+	  }
+	  .wrapper2 .button2{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover{
+		width: 150px;
+	  }
+	  .wrapper2 .button2 .icon2{
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2:nth-child(1):hover .icon2{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2 .icon2 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover .icon2 a{
+		color: white;
+	  }
+	  .wrapper2 .button2 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.5em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper2 .button2 a {
+		  text-decoration: none;
+	  }
+	  .wrapper3 .button3 {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover{
+		width: 150px;
+	  }
+	  .wrapper3 .button3 .icon3 {
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3:nth-child(1):hover .icon3{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3 .icon3 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover .icon3 a{
+		color: white;
+	  }
+	  .wrapper3 .button3 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.8em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper3 .button3 a {
+		  text-decoration: none;
+	  }
+
+}
+
+/* ---------- ESTILOS SIN HOVER (SIN RESPUESTA) ---------*/
+
+@media (hover: none) and (max-width: 769px) and (min-width: 430px) and (orientation: portrait) {
+
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.doctor-info a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+	.wrapper4 .button4:hover {
+		width: 40px;
+	}
+	.wrapper4 .button4:nth-child(1):hover .icon4 {
+		background: #2B2D42;
+	}
+	.wrapper2 .button2:hover {
+		width: 40px;
+	}
+	.wrapper2 .button2:nth-child(1):hover .icon2 {
+		background: #2B2D42;
+	}
+	.wrapper3 .button3:hover {
+		width: 40px;
+	}
+	.wrapper3 .button3:nth-child(1):hover .icon3 {
+		background: #2B2D42;
+	}
+
+}
+
+/* ---------- CELULARES GRANDES VERTICALMENTE ---------*/
+
+@media screen and (max-width: 429px) and (min-width: 391px) and (orientation: portrait)  {
+
+	.contenedor-menu {
+		width: 360px;
+		padding: 4% 0;
+	}
+	.logo {
+		width: 220px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 71px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.8em;
+		color: white;
+		margin: 0 0;
+		margin-top: 6%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.menu .boton1 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton2 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton3 {
+		width: 60%;
+		padding: 1% 0;
+	}
+
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+
+
+	.informacion-doctor {
+		width: 350px;
+	}
+	.doctor {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 25%;
+		padding-bottom: 20%;
+	}
+	.doctor-imagen {
+		width: 100%;
+		height: auto;
+	}
+	.doctor-imagen h2 {
+		font-size: 5.5em;
+	}
+	.doctor-imagen img {
+		margin-top: 4%;
+		width: 100%;
+	}
+	.doctor-info {
+		width: 98%;
+		height: auto;
+		padding: 0 1%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.doctor-info h2{
+		font-size: 5em;
+	}
+	.doctor-info p {
+		font-size: 3em;
+		margin-top: -2%;
+		text-align: center;
+	}
+	.doctor-info a {
+		width: 40%;
+		margin: 0 0;
+		padding: 0.8% 0;
+		margin-top: 3%;
+		font-size: 2.6em;
+	}
+	.doctor-info a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+
+
+	.logopie {
+		width: 50%;
+		height: auto;
+	}
+	.contacto {
+		width: 30%;
+	}
+	.contenedor-pie {
+		width: 380px;
+	}
+	.piedepagina {
+		width: 350px;
+		padding-top: 8%;
+		padding-bottom: 12%;
+	}
+	.wrapper4 .button4{
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 20px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover{
+		width: 35px;
+	  }
+	  .wrapper4 .button4 .icon4{
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4:nth-child(1):hover .icon4{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4 .icon4 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover .icon4 a{
+		color: white;
+	  }
+	  .wrapper4 .button4 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.5em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper4 .button4 a {
+		  text-decoration: none;
+	  }
+	  .wrapper2 .button2{
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 20px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover{
+		width: 35px;
+	  }
+	  .wrapper2 .button2 .icon2{
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2:nth-child(1):hover .icon2{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2 .icon2 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover .icon2 a{
+		color: white;
+	  }
+	  .wrapper2 .button2 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.5em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper2 .button2 a {
+		  text-decoration: none;
+	  }
+	  .wrapper3 .button3 {
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 20px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover{
+		width: 35px;
+	  }
+	  .wrapper3 .button3 .icon3 {
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3:nth-child(1):hover .icon3{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3 .icon3 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover .icon3 a{
+		color: white;
+	  }
+	  .wrapper3 .button3 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.8em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper3 .button3 a {
+		  text-decoration: none;
+	  }
+
+}
+
+/* ---------- CELULARES MEDIANOS VERTICALMENTE ---------*/
+
+@media screen and (max-width: 390px) and (min-width: 350px) and (orientation: portrait)  {
+
+	.contenedor-menu {
+		width: 330px;
+		padding: 5% 0;
+	}
+	.logo {
+		width: 220px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 75px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.6em;
+		color: white;
+		margin: 0 0;
+		margin-top: 6%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.menu .boton1 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton2 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton3 {
+		width: 60%;
+		padding: 1% 0;
+	}
+
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+	nav.sticky #icon {
+		display: block;
+		color: #2B2D42;
+	}
+
+
+	.informacion-doctor {
+		width: 320px;
+	}
+	.doctor {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 30%;
+		padding-bottom: 20%;
+	}
+	.doctor-imagen {
+		width: 100%;
+		height: auto;
+	}
+	.doctor-imagen h2 {
+		font-size: 5em;
+	}
+	.doctor-imagen img {
+		margin-top: 4%;
+		width: 100%;
+	}
+	.doctor-info {
+		width: 98%;
+		height: auto;
+		padding: 0 1%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.doctor-info h2{
+		font-size: 4.5em;
+	}
+	.doctor-info p {
+		font-size: 2.8em;
+		margin-top: -2%;
+		text-align: center;
+	}
+	.doctor-info a {
+		width: 45%;
+		margin: 0 0;
+		padding: 0.8% 0;
+		margin-top: 3%;
+		font-size: 2.6em;
+	}
+	.doctor-info a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+
+	.logopie {
+		width: 50%;
+		height: auto;
+	}
+	.contacto {
+		width: 30%;
+	}
+	.contenedor-pie {
+		width: 350px;
+	}
+	.piedepagina {
+		width: 330px;
+		padding-top: 8%;
+		padding-bottom: 12%;
+	}
+	.wrapper4 .button4{
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover{
+		width: 35px;
+	  }
+	  .wrapper4 .button4 .icon4{
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4:nth-child(1):hover .icon4{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4 .icon4 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover .icon4 a{
+		color: white;
+	  }
+	  .wrapper4 .button4 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.5em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper4 .button4 a {
+		  text-decoration: none;
+	  }
+	  .wrapper2 .button2{
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover{
+		width: 35px;
+	  }
+	  .wrapper2 .button2 .icon2{
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2:nth-child(1):hover .icon2{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2 .icon2 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover .icon2 a{
+		color: white;
+	  }
+	  .wrapper2 .button2 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.5em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper2 .button2 a {
+		  text-decoration: none;
+	  }
+	  .wrapper3 .button3 {
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover{
+		width: 35px;
+	  }
+	  .wrapper3 .button3 .icon3 {
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3:nth-child(1):hover .icon3{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3 .icon3 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover .icon3 a{
+		color: white;
+	  }
+	  .wrapper3 .button3 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.8em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper3 .button3 a {
+		  text-decoration: none;
+	  }
+
+}
+
+/* ---------- CELULARES MEDIANOS VERTICALMENTE ---------*/
+
+@media screen and (max-width: 360px) and (min-width: 350px) and (orientation: portrait)  {
+
+	.contenedor-menu {
+		width: 320px;
+		padding: 5% 0;
+	}
+	.logo {
+		width: 220px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 75px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.4em;
+		color: white;
+		margin: 0 0;
+		margin-top: 6%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.menu .boton1 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton2 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton3 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+
+
+	.informacion-doctor {
+		width: 310px;
+	}
+	.doctor {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 32%;
+		padding-bottom: 20%;
+	}
+	.doctor-imagen {
+		width: 100%;
+		height: auto;
+	}
+	.doctor-imagen h2 {
+		font-size: 4.8em;
+	}
+	.doctor-imagen img {
+		margin-top: 4%;
+		width: 100%;
+	}
+	.doctor-info {
+		width: 98%;
+		height: auto;
+		padding: 0 1%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.doctor-info h2{
+		font-size: 4.3em;
+	}
+	.doctor-info p {
+		font-size: 2.8em;
+		margin-top: -2%;
+		text-align: center;
+	}
+	.doctor-info a {
+		width: 42%;
+		margin: 0 0;
+		padding: 0.8% 0;
+		margin-top: 3%;
+		font-size: 2.6em;
+	}
+	.doctor-info a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+
+
+	.logopie {
+		width: 50%;
+		height: auto;
+	}
+	.contacto {
+		width: 30%;
+	}
+	.contenedor-pie {
+		width: 330px;
+	}
+	.piedepagina {
+		width: 310px;
+		padding-top: 9%;
+		padding-bottom: 14%;
+	}
+	.wrapper4 .button4{
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover{
+		width: 35px;
+	  }
+	  .wrapper4 .button4 .icon4{
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4:nth-child(1):hover .icon4{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4 .icon4 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover .icon4 a{
+		color: white;
+	  }
+	  .wrapper4 .button4 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.5em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper4 .button4 a {
+		  text-decoration: none;
+	  }
+	  .wrapper2 .button2{
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover{
+		width: 35px;
+	  }
+	  .wrapper2 .button2 .icon2{
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2:nth-child(1):hover .icon2{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2 .icon2 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover .icon2 a{
+		color: white;
+	  }
+	  .wrapper2 .button2 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.5em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper2 .button2 a {
+		  text-decoration: none;
+	  }
+	  .wrapper3 .button3 {
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover{
+		width: 35px;
+	  }
+	  .wrapper3 .button3 .icon3 {
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3:nth-child(1):hover .icon3{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3 .icon3 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover .icon3 a{
+		color: white;
+	  }
+	  .wrapper3 .button3 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.8em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper3 .button3 a {
+		  text-decoration: none;
+	  }
+
+}
+
+/* ---------- CELULARES PEQUEÑOS VERTICALMENTE ---------*/
+
+@media screen and (max-width: 349px) and (min-width: 310px) and (orientation: portrait)  {
+
+	.contenedor-menu {
+		width: 280px;
+		padding: 6% 0;
+	}
+	.logo {
+		width: 220px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.3em;
+		color: white;
+		margin: 0 0;
+		margin-top: 6%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.menu .boton1 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton2 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	.menu .boton3 {
+		width: 60%;
+		padding: 1% 0;
+	}
+	
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+	
+
+	.informacion-doctor{
+		width: 270px;
+	}
+	.doctor {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 32%;
+		padding-bottom: 20%;
+	}
+	.doctor-imagen {
+		width: 100%;
+		height: auto;
+	}
+	.doctor-imagen h2 {
+		font-size: 4.5em;
+	}
+	.doctor-imagen img {
+		margin-top: 4%;
+		width: 100%;
+	}
+	.doctor-info {
+		width: 98%;
+		height: auto;
+		padding: 0 1%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.doctor-info h2{
+		font-size: 4em;
+	}
+	.doctor-info p {
+		font-size: 2.6em;
+		margin-top: -2%;
+		text-align: center;
+	}
+	.doctor-info a {
+		width: 48%;
+		margin: 0 0;
+		padding: 0.8% 0;
+		margin-top: 3%;
+		font-size: 2.5em;
+	}
+	.doctor-info a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+
+
+	.logopie {
+		width: 50%;
+		height: auto;
+	}
+	.contacto {
+		width: 30%;
+	}
+	.contenedor-pie {
+		width: 300px;
+	}
+	.piedepagina {
+		width: 280px;
+		padding-top: 10%;
+		padding-bottom: 16%;
+	}
+	.wrapper4 .button4{
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover{
+		width: 30px;
+	  }
+	  .wrapper4 .button4 .icon4{
+		display: inline-flex;
+		height: 30px;
+		width: 30px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 30px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4:nth-child(1):hover .icon4{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4 .icon4 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 30px;
+		font-size: 17px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover .icon4 a{
+		color: white;
+	  }
+	  .wrapper4 .button4 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.3em;
+		margin-left: 7px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper4 .button4 a {
+		  text-decoration: none;
+	  }
+	  .wrapper2 .button2{
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover{
+		width: 30px;
+	  }
+	  .wrapper2 .button2 .icon2{
+		display: inline-flex;
+		height: 30px;
+		width: 30px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 30px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2:nth-child(1):hover .icon2{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2 .icon2 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 30px;
+		font-size: 17px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover .icon2 a{
+		color: white;
+	  }
+	  .wrapper2 .button2 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.3em;
+		margin-left: 7px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper2 .button2 a {
+		  text-decoration: none;
+	  }
+	  .wrapper3 .button3 {
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover{
+		width: 30px;
+	  }
+	  .wrapper3 .button3 .icon3 {
+		display: inline-flex;
+		height: 30px;
+		width: 30px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 30px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3:nth-child(1):hover .icon3{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3 .icon3 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 30px;
+		font-size: 17px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover .icon3 a{
+		color: white;
+	  }
+	  .wrapper3 .button3 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.3em;
+		margin-left: 7px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper3 .button3 a {
+		  text-decoration: none;
+	  }
+
+}

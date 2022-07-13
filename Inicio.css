@@ -1,0 +1,5342 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: white;
+	font-size: 5px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+nav {
+	width: 100%;
+	height: auto;
+	display: flex;
+	background: transparent;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 10;
+	transition: .5s ease all;
+}
+nav.sticky {
+	background: white;
+	box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.1);
+	transition: .5s ease all;
+}
+
+.contenedor-menu {
+	width: 1200px;
+	height: auto;
+	padding: 1.2% 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 300ms ease;
+}
+nav.sticky .contenedor-menu {
+	width: 1200px;
+	padding: 0.5% 0;
+	transition: all 300ms ease;
+}
+.logo {
+	width: 450px;
+	background: url(images/logo-blanco.png);
+	background-size: cover;
+	padding-right: 0.5%;
+	height: auto;
+	transition: all 300ms ease;
+}
+nav.sticky .logo {
+	width: 450px;
+	background: url(images/logo-solo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-right: 0.5%;
+	height: auto;
+	transition: all 300ms ease;
+}
+.logo img {
+	width: 100%;
+	filter: opacity(0%);
+}
+.menu {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: flex-end;
+}
+nav.sticky .menu {
+	width: 100%;
+	margin-left: 9%;
+}
+.menu a {
+	font-size: 3em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 800;
+	color: white;
+	border-radius: 20px;
+	text-decoration: none;
+	margin: 0 0;
+	margin-left: 4%;
+	margin-right: 0;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	transition: .5s ease all;
+}
+nav.sticky .menu a {
+	font-size: 2.8em;
+	color: #2B2D42;
+}
+.menu .boton1 {
+	width: 15.5%;
+	padding: 1% 0.5%;
+}
+.menu .boton2 {
+	width: 25%;
+	padding: 1% 0.5%;
+}
+.menu .boton3 {
+	width: 14%;
+	padding: 1% 0.5%;
+}
+nav.sticky .menu .boton1,
+nav.sticky .menu .boton2,
+nav.sticky .menu .boton3 {
+	padding: 0 0;
+}
+.menu a:hover {
+	color: #00A19A;
+	background: white;
+	transition: .5s ease all;
+}
+nav.sticky .menu a:hover {
+	color: #00A19A;
+	background: transparent;
+}
+nav #icon {
+	color: white;
+	font-size: 5em;
+	float: right;
+	cursor: pointer;
+	display: none;
+}
+
+
+header {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(0deg, rgba(34,79,122,1) 0%, rgba(0,161,154,1) 100%);
+	align-items: center;
+}
+.portada {
+	width: 1180px;
+	height: auto;
+	padding:  0 0;
+	padding-top: 8%;
+	padding-bottom: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	transition: all 300ms ease;
+}
+.titular {
+	width: 50%;
+	height: auto;
+	margin-top: -7.5%;
+}
+h1 {
+	font-size: 8em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 800;
+	color: white;
+}
+h3 {
+	font-size: 4em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 500;
+	color: white;
+}
+.titular h1 {
+    margin: 0 0;
+    margin-bottom: 0.5%;
+}
+.titular h3 {
+	margin: 0 0;
+	margin-bottom: 4%;
+}
+.tagline {
+	font-weight: 700;
+}
+.imagenportada-tablet-movil {
+	display: none;
+}
+.botonestitular {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+}
+.botonestitular a {
+	font-size: 3.6em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 900;
+	color: #00A19A;
+	background: white;
+	border-radius: 30px;
+	margin: 0;
+	margin-right: 5%;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	transition: .5s ease all;
+}
+.botonestitular .botontitular1 {
+	width: 21%;
+	padding: 1.5% 1.5%;
+}
+.botonestitular a:hover {
+	color: white;
+	background: #00A19A;
+	transition: .5s ease all;
+}
+.imagenportada {
+	width: 50%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.imagenportada img {
+	width: 100%;
+}
+
+main {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.cartas {
+	width: 1190px;
+	height: auto;
+	transition: all 300ms ease;
+}
+.nosotros {
+	width: 100%;
+	height: auto;
+	padding: 0 0;
+	padding-top: 6%;
+	text-align: center;
+}
+.servicios {
+	width: 100%;
+	height: auto;
+	padding: 8% 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.card {
+	position: relative;
+	width: 310px;
+	height: 160px;
+	background: white;
+	border-radius: 20px;
+	box-shadow: 0 0px 35px rgba(0, 0, 0, 0.17);
+	transition: .5s ease all;
+}
+.card:hover {
+	height: 370px;
+}
+.imagen-card {
+	position: absolute;
+	z-index: 2;
+	top: -60px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 150px;
+	height: 150px;
+	background: black;
+	border-radius: 30px;
+	box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	transition: .5s ease all;
+}
+.card:hover .imagen-card {
+	width: 200px;
+	height: 200px;
+	transition: .5s ease all;
+}
+.imagen-card img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transition: .5s ease all;
+}
+.card .contenido-card {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	overflow: hidden;
+}
+.card .contenido-card .detalles-card {
+	width: 100%;
+	text-align: center;
+	transform: translateY(120px);
+	transition: .5s ease all;
+}
+.card:hover .contenido-card .detalles-card {
+	transform: translateY(70px);
+	transition: .5s ease all;
+}
+.card .contenido-card .detalles-card h3 {
+	font-size: 4.5em;
+	color: #2B2D42;
+	font-weight: 800;
+	text-align: center;
+}
+.info-card {
+	width: 90%;
+	padding: 0 5%;
+	text-align: center;
+	transform: translateY(55px);
+	filter: opacity(0);
+	transition: .5s ease all;
+}
+.info-card p {
+	font-size: 3.4em;
+	color: #2B2D42;
+	line-height: 1.2em;
+}
+.card:hover .info-card {
+	transform: translateY(45px);
+	filter: opacity(100);
+	transition: 1.5s ease all;
+}
+.card .contenido-card .detalles-card .info-card {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+.boton-card {
+	width: 100%;
+	transform: translateY(55px);
+	filter: opacity(0);
+	display: flex;
+	justify-content: center;
+	transition: .5s ease all;
+}
+.card:hover .boton-card {
+	filter: opacity(100);
+	transform: translateY(45px);
+	transition: 1.5s ease all;
+}
+.card .contenido-card .detalles-card .boton-card {
+	display: flex;
+	justify-content: space-between;
+}
+.boton-card a {
+	display: flex;
+	padding: 1.5% 4%;
+	margin: 0 0;
+	margin-top: 3%;
+	font-size: 3.2em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 700;
+	color: white;
+	background: #00A19A;
+	border: #00A19A 2px solid;
+	text-decoration: none;
+	border-radius: 20px;
+	transition: .3s ease all;
+}
+.boton-card a:hover {
+	color: #00A19A;
+	background: white;
+	border: #00A19A 2px solid;
+	transition: .3s ease all;
+}
+
+h2 {
+	font-size: 6.5em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 800;
+	color: #2B2D42;
+}
+p {
+	font-size: 3.5em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 500;
+	color: #2B2D42;
+}
+
+
+.testimonios {
+	width: 1190px;
+	height: auto;
+	transition: all 300ms ease;
+}
+.titulo-testimonios {
+	width: 100%;
+	height: auto;
+}
+.titulo-testimonios h2{
+	text-align: left;
+}
+.contenedor {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	overflow: hidden;
+    padding-bottom: 6%;
+}
+.slider-contenedor {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+.slider-test {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	padding: 6% 0;
+	flex-shrink: 0;
+	text-align: center;
+}
+.slider-test img {
+	width: 20%;
+	object-fit: cover;
+}
+.slider-test h3 {
+	font-size: 4em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 900;
+	color: #2B2D42;
+}
+
+footer {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contenedor-pie {
+	width: 1500px;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid #2B2D42;
+	transition: all 300ms ease;
+}
+.piedepagina {
+	width: 1190px;
+	height: auto;
+	padding: 0 0;
+	padding-top: 4%;
+	padding-bottom: 8%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	transition: all 300ms ease;
+}
+.logopie {
+	width: 25%;
+	height: auto;
+}
+.logopie img {
+	width: 100%;
+}
+.contacto {
+	width: 17%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.wrapper4 .button4 {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	background: #2B2D42;
+	border-radius: 50px;
+	margin-bottom: 40px;
+	cursor: pointer;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	transition: all 0.3s ease-out;
+}
+.wrapper4 .button4:hover {
+	width: 200px;
+}
+.wrapper4 .button4 .icon4 {
+	display: inline-flex;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	justify-content: center;
+	border-radius: 50px;
+	line-height: 50px;
+	box-sizing: border-box;
+	transition: .3s ease-in-out all;
+}
+.wrapper4 .button4:nth-child(1):hover .icon4 {
+	background: #00A19A;
+	transition: .3s ease-in-out all;
+}
+.wrapper4 .button4 .icon4 a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	justify-content: center;
+	transform: scale(1.2);
+	line-height: 50px;
+	font-size: 20px;
+	transition: all 0.3s ease-out;
+}
+.wrapper4 .button4:hover .icon4 a{
+	color: white;
+}
+.wrapper4 .button4 span {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 700;
+	font-size: 3.5em;
+	margin-left: 10px;
+	transition: all 0.3s ease-out;
+}
+.wrapper4 .button4:nth-child(1) span {
+	color: white;
+}
+.wrapper4 .button4 a {
+	text-decoration: none;
+}
+.wrapper2 .button2 {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	background: #2B2D42;
+	border-radius: 50px;
+	margin-bottom: 40px;
+	cursor: pointer;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	transition: all 0.3s ease-out;
+}
+.wrapper2 .button2:hover {
+	width: 200px;
+}
+.wrapper2 .button2 .icon2 { 
+	display: inline-flex;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	justify-content: center;
+	border-radius: 50px;
+	line-height: 50px;
+	box-sizing: border-box;
+	transition: .3s ease-in-out all;
+}
+.wrapper2 .button2:nth-child(1):hover .icon2 {
+	background: #00A19A;
+	transition: .3s ease-in-out all;
+}
+.wrapper2 .button2 .icon2 a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	justify-content: center;
+	transform: scale(1.2);
+	line-height: 50px;
+	font-size: 20px;
+	transition: all 0.3s ease-out;
+}
+.wrapper2 .button2:hover .icon2 a {
+	color: white;
+}
+.wrapper2 .button2 span {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 700;
+	font-size: 3.5em;
+	margin-left: 10px;
+	transition: all 0.3s ease-out;
+}
+.wrapper2 .button2:nth-child(1) span {
+	color: white;
+}
+.wrapper2 .button2 a {
+	text-decoration: none;
+}
+.wrapper3 .button3 {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	background: #2B2D42;
+	border-radius: 50px;
+	margin-bottom: 40px;
+	cursor: pointer;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	transition: all 0.3s ease-out;
+}
+.wrapper3 .button3:hover{
+	width: 200px;
+}
+.wrapper3 .button3 .icon3 {
+	display: inline-flex;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	justify-content: center;
+	border-radius: 50px;
+	line-height: 50px;
+	box-sizing: border-box;
+	transition: .3s ease-in-out all;
+}
+.wrapper3 .button3:nth-child(1):hover .icon3 {
+	background: #00A19A;
+	transition: .3s ease-in-out all;
+}
+.wrapper3 .button3 .icon3 a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	justify-content: center;
+	transform: scale(1.2);
+	line-height: 50px;
+	font-size: 20px;
+	transition: all 0.3s ease-out;
+}
+.wrapper3 .button3:hover .icon3 a {
+	color: white;
+}
+.wrapper3 .button3 span {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 700;
+	font-size: 3.5em;
+	margin-left: 10px;
+	transition: all 0.3s ease-out;
+}
+.wrapper3 .button3:nth-child(1) span {
+	color: white;
+}
+.wrapper3 .button3 a {
+	text-decoration: none;
+}
+
+/*--------- PANTALLAS O LAPTOPS GRANDES HORIZONTALMENTE -------- */
+
+@media screen and (max-width: 1700px) and (min-width: 1367px) and (orientation: landscape) {
+
+	.slider-test {
+		width: 90%;
+		padding: 6% 5%;
+	}
+	.contenedor-pie {
+		width: 1350px;
+		transition: all 300ms ease;
+	}
+	.piedepagina {
+		width: 1175px;
+		transition: all 300ms ease;
+	}
+}
+
+/*--------- PANTALLAS O LAPTOPS GRANDES HORIZONTALMENTE -------- */
+
+@media screen and (max-width: 1450px) and (min-width: 1367px) and (orientation: landscape) {
+
+	.contenedor-menu {
+		width: 1020px;
+		transition: all 300ms ease;
+	}
+	nav.sticky .contenedor-menu {
+		width: 1020px;
+		transition: all 300ms ease;
+	}
+
+	.logo {
+		width: 400px;
+		transition: all 300ms ease;
+	}
+	nav.sticky .logo {
+		width: 400px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: flex-end;
+	}
+	nav.sticky .menu {
+		width: 100%;
+		margin-left: 9%;
+	}
+	.menu a {
+		font-size: 2.9em;
+		transition: .5s ease all;
+	}
+	nav.sticky .menu a {
+		font-size: 2.7em;
+	}
+	.menu .boton1 {
+		width: 17%;
+		padding: 1% 0.5%;
+	}
+	.menu .boton2 {
+		width: 27.5%;
+		padding: 1% 0.5%;
+	}
+	.menu .boton3 {
+		width: 16.5%;
+		padding: 1% 0.5%;
+	}
+
+	.portada {
+		width: 1000px;
+	}
+	.botonestitular .botontitular1 {
+		width: 24%;
+		padding: 1.5% 1.5%;
+	}
+	.cartas {
+		width: 1010px;
+	}
+
+	.card {
+		width: 270px;
+		transition: .5s ease all;
+	}
+	.card:hover {
+		height: 350px;
+	}
+	.imagen-card {
+		width: 140px;
+		height: 140px;
+		transition: .5s ease all;
+	}
+	.card:hover .imagen-card {
+		width: 170px;
+		height: 170px;
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(125px);
+		transition: .5s ease all;
+	}
+	.card:hover .contenido-card .detalles-card {
+		transform: translateY(60px);
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card h3 {
+		font-size: 4.2em;
+	}
+	.info-card {
+		transform: translateY(45px);
+		transition: .5s ease all;
+	}
+	.card:hover .info-card {
+		transform: translateY(35px);
+		transition: 1.5s ease all;
+	}
+	.boton-card {
+		transform: translateY(45px);
+		transition: .5s ease all;
+	}
+	.card:hover .boton-card {
+		transform: translateY(35px);
+		transition: 1.5s ease all;
+	}
+
+	.testimonios {
+		width: 1000px;
+		height: auto;
+		transition: all 300ms ease;
+	}
+	.slider-test {
+		width: 90%;
+		padding: 6% 5%;
+	}
+	.contenedor-pie {
+		width: 1100px;
+		transition: all 300ms ease;
+	}
+	.piedepagina {
+		width: 1000px;
+		transition: all 300ms ease;
+	}
+
+}
+
+/*--------- LAPTOPS PEQUEÑAS O TABLETS GRANDES HORIZONTALMENTE -------- */
+
+@media screen and (max-width: 1366px) and (min-width: 1051px) and (orientation: landscape) {
+
+	.contenedor-menu {
+		width: 1000px;
+	}
+	nav.sticky .contenedor-menu {
+		width: 1000px;
+	}
+	.logo {
+		width: 400px;
+		transition: all 300ms ease;
+	}
+	nav.sticky .logo {
+		width: 400px;
+		transition: all 300ms ease;
+	}
+	.menu a {
+		font-size: 2.8em;
+		transition: .5s ease all;
+	}
+	nav.sticky .menu a {
+		font-size: 2.6em;
+	}
+	.menu .boton1 {
+		width: 17%;
+		padding: 1% 1%;
+	}
+	.menu .boton2 {
+		width: 28%;
+		padding: 1% 1%;
+	}
+	.menu .boton3 {
+		width: 16%;
+		padding: 1% 1%;
+	}
+
+	.portada {
+		width: 980px;
+	}
+	.botonestitular a {
+		font-size: 3.3em;
+	}
+	.botonestitular .botontitular1 {
+		width: 24%;
+		padding: 1.5% 1.5%;
+	}
+
+	.cartas {
+		width: 990px;
+	}
+	.card {
+		width: 270px;
+		transition: .5s ease all;
+	}
+	.card:hover {
+		height: 350px;
+	}
+	.imagen-card {
+		width: 140px;
+		height: 140px;
+		transition: .5s ease all;
+	}
+	.card:hover .imagen-card {
+		width: 170px;
+		height: 170px;
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(125px);
+		transition: .5s ease all;
+	}
+	.card:hover .contenido-card .detalles-card {
+		transform: translateY(60px);
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card h3 {
+		font-size: 4.2em;
+	}
+	.info-card {
+		transform: translateY(45px);
+		transition: .5s ease all;
+	}
+	.card:hover .info-card {
+		transform: translateY(35px);
+		transition: 1.5s ease all;
+	}
+	.boton-card {
+		transform: translateY(45px);
+		transition: .5s ease all;
+	}
+	.card:hover .boton-card {
+		transform: translateY(35px);
+		transition: 1.5s ease all;
+	}
+
+	.testimonios {
+		width: 980px;
+		height: auto;
+	}
+	.slider-test {
+		width: 100%;
+		padding: 6% 0;
+	}
+	.contenedor-pie {
+		width: 1100px;
+	}
+	.piedepagina {
+		width: 980px;
+	}
+
+}
+
+/* ---------- ESTILOS SIN HOVER (SIN RESPUESTA) ---------*/
+
+@media (hover: none) and (max-width: 1366px) and (min-width: 1051px) and (orientation: landscape) {
+
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a:hover {
+		color: #2B2D42;
+		background: transparent;
+	}
+	.card {
+		height: 350px;
+	}
+	.botonestitular a:hover {
+		color: #00A19A;
+		background: white;
+	}
+	.imagen-card {
+		width: 170px;
+		height: 170px;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(60px);
+	}
+	.info-card {
+		transform: translateY(35px);
+		filter: opacity(100);
+	}
+	.boton-card {
+		transform: translateY(35px);
+		filter: opacity(100);
+	}
+	.boton-card a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+	}
+	.wrapper4 .button4:hover {
+		width: 50px;
+	}
+	.wrapper4 .button4:nth-child(1):hover .icon4 {
+		background: #2B2D42;
+	}
+	.wrapper2 .button2:hover {
+		width: 50px;
+	}
+	.wrapper2 .button2:nth-child(1):hover .icon2 {
+		background: #2B2D42;
+	}
+	.wrapper3 .button3:hover {
+		width: 50px;
+	}
+	.wrapper3 .button3:nth-child(1):hover .icon3 {
+		background: #2B2D42;
+	}
+
+}
+
+/*--------- TABLETS HORIZONTALMENTE -------- */
+
+@media screen and (max-width: 1050px) and (min-width: 960px) and (orientation: landscape) {
+
+	.contenedor-menu {
+		width: 900px;
+		padding: 1.5% 0;
+	}
+	nav.sticky .contenedor-menu {
+		width: 900px;
+		padding: 0.8% 0;
+	}
+	.logo {
+		width: 350px;
+		transition: all 300ms ease;
+	}
+	nav.sticky .logo {
+		width: 350px;
+		transition: all 300ms ease;
+	}
+	.menu a {
+		font-size: 2.7em;
+		transition: .5s ease all;
+	}
+	nav.sticky .menu a {
+		font-size: 2.5em;
+	}
+	.menu .boton1 {
+		width: 18%;
+		padding: 1% 1%;
+	}
+	.menu .boton2 {
+		width: 29%;
+		padding: 1% 1%;
+	}
+	.menu .boton3 {
+		width: 17%;
+		padding: 1% 1%;
+	}
+
+	.portada {
+		width: 880px;
+	}
+	.titular h1 {
+		margin: 0 0;
+		font-size: 7.5em;
+	}
+	.titular h3 {
+		font-size: 3.6em;
+	}
+	.botonestitular a {
+		font-size: 3.1em;
+	}
+	.botonestitular .botontitular1 {
+		width: 26%;
+		padding: 1.3% 1.3%;
+	}
+
+	.cartas {
+		width: 890px;
+	}
+	.nosotros h2{
+		font-size: 6em;	
+	}
+	.servicios {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 10%;
+		padding-bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.card {
+		width: 290px;
+		margin: 0 3%;
+		margin-bottom: 12%;
+		transition: .5s ease all;
+	}
+	.card:hover {
+		height: 340px;
+	}
+	.imagen-card {
+		width: 140px;
+		height: 140px;
+		transition: .5s ease all;
+	}
+	.card:hover .imagen-card {
+		width: 170px;
+		height: 170px;
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(115px);
+		transition: .5s ease all;
+	}
+	.card:hover .contenido-card .detalles-card {
+		transform: translateY(60px);
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card h3 {
+		font-size: 4.2em;
+	}
+	.info-card {
+		transform: translateY(45px);
+		filter: opacity(0);
+		transition: .5s ease all;
+	}
+	.card:hover .info-card {
+		transform: translateY(35px);
+		filter: opacity(100);
+		transition: 1.5s ease all;
+	}
+	.boton-card {
+		transform: translateY(45px);
+		filter: opacity(0);
+		transition: .5s ease all;
+	}
+	.card:hover .boton-card {
+		filter: opacity(100);
+		transform: translateY(35px);
+		transition: 1.5s ease all;
+	}
+
+	.testimonios {
+		width: 880px;
+		height: auto;
+		margin-top: -6%;
+	}
+	.slider-test {
+		width: 100%;
+		padding: 6% 0;
+	}
+	.slider-test h3 {
+		font-size: 3.8em;
+	}
+	.slider-test P {
+		font-size: 3.4em;
+	}
+	.logopie {
+		width: 28%;
+		height: auto;
+	}
+	.contacto {
+		width: 17%;
+	}
+	.contenedor-pie {
+		width: 970px;
+	}
+	.piedepagina {
+		width: 880px;
+	}
+
+}
+
+/* ---------- ESTILOS SIN HOVER (SIN RESPUESTA) ---------*/
+
+@media (hover: none) and (max-width: 1050px) and (min-width: 960px) and (orientation: landscape) {
+
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a:hover {
+		color: #2B2D42;
+		background: transparent;
+	}
+	.card {
+		height: 340px;
+	}
+	.botonestitular a:hover {
+		color: #00A19A;
+		background: white;
+	}
+	.imagen-card {
+		width: 170px;
+		height: 170px;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(60px);
+	}
+	.info-card {
+		transform: translateY(35px);
+		filter: opacity(100);
+	}
+	.boton-card {
+		transform: translateY(35px);
+		filter: opacity(100);
+	}
+	.boton-card a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+	}
+	.wrapper4 .button4:hover {
+		width: 50px;
+	}
+	.wrapper4 .button4:nth-child(1):hover .icon4 {
+		background: #2B2D42;
+	}
+	.wrapper2 .button2:hover {
+		width: 50px;
+	}
+	.wrapper2 .button2:nth-child(1):hover .icon2 {
+		background: #2B2D42;
+	}
+	.wrapper3 .button3:hover {
+		width: 50px;
+	}
+	.wrapper3 .button3:nth-child(1):hover .icon3 {
+		background: #2B2D42;
+	}
+
+}
+
+/*--------- CELULARES GRANDES HORIZONTALMENTE -------- */
+
+@media screen and (max-width: 960px) and (min-width: 790px) and (orientation: landscape)  {
+
+	.contenedor-menu {
+		width: 700px;
+		padding: 2% 0;
+	}
+	nav.sticky .contenedor-menu {
+		width: 700px;
+		padding: 0.7% 0;
+	}
+	.logo {
+		width: 280px;
+		transition: all 300ms ease;
+	}
+	nav.sticky .logo {
+		width: 280px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 86px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	nav.sticky .menu {
+		top: 64px;
+		margin-left: 0;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.8em;
+		margin: 0 0;
+		margin-top: 4%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	nav.sticky .menu a {
+		font-size: 2.8em;
+		color: white;
+	}
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.menu .boton1 {
+		width: 50%;
+		padding: 1% 0;
+	}
+	.menu .boton2 {
+		width: 50%;
+		padding: 1% 0;
+	}
+	.menu .boton3 {
+		width: 50%;
+		padding: 1% 0;
+	}
+	nav.sticky .menu .boton1,
+	nav.sticky .menu .boton3 {
+		padding: 1% 0;
+	}
+	nav.sticky .menu .boton2 {
+		padding: 1% 0;
+	}
+
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+	nav.sticky #icon {
+		display: block;
+		color: #2B2D42;
+	}
+
+
+	.portada {
+		width: 700px;
+		padding-top: 11%;
+		transition: all 300ms ease;
+	}
+	.titular h1 {
+		font-size: 6.5em;
+	}
+	.titular h3 {
+		font-size: 3.3em;
+	}
+	.botonestitular a {
+		font-size: 2.9em;
+	}
+	.botonestitular .botontitular1 {
+		width: 32%;
+		padding: 1.5% 1.5%;
+	}
+	.imagenportada {
+		width: 45%;
+	}
+
+	.cartas {
+		width: 690px;
+	}
+	.nosotros h2{
+		font-size: 6em;	
+	}
+	.servicios {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 12%;
+		padding-bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.card {
+		width: 260px;
+		height: 140px;
+		margin: 0 3%;
+		margin-bottom: 15%;
+		transition: .5s ease all;
+	}
+	.card:hover {
+		height: 340px;
+	}
+	.imagen-card {
+		width: 130px;
+		height: 130px;
+		transition: .5s ease all;
+	}
+	.card:hover .imagen-card {
+		width: 160px;
+		height: 160px;
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(120px);
+		transition: .5s ease all;
+	}
+	.card:hover .contenido-card .detalles-card {
+		transform: translateY(50px);
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card h3 {
+		font-size: 4em;
+	}
+	.info-card {
+		transform: translateY(35px);
+		filter: opacity(0);
+		transition: .5s ease all;
+	}
+	.card:hover .info-card {
+		transform: translateY(25px);
+		filter: opacity(100);
+		transition: 1.5s ease all;
+	}
+	.boton-card {
+		transform: translateY(40px);
+		filter: opacity(0);
+		transition: .5s ease all;
+	}
+	.card:hover .boton-card {
+		filter: opacity(100);
+		transform: translateY(30px);
+		transition: 1.5s ease all;
+	}
+
+	.testimonios {
+		width: 680px;
+		height: auto;
+		margin-top: -6%;
+	}
+	.slider-test {
+		width: 100%;
+		padding: 6% 0;
+	}
+	.slider-test h3 {
+		font-size: 3.7em;
+	}
+	.slider-test P {
+		font-size: 3.3em;
+	}
+	.logopie {
+		width: 36%;
+		height: auto;
+	}
+	.contacto {
+		width: 17%;
+	}
+	.contenedor-pie {
+		width: 800px;
+	}
+	.piedepagina {
+		width: 680px;
+	}
+	.wrapper4 .button4{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover{
+		width: 150px;
+	  }
+	  .wrapper4 .button4 .icon4{
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4:nth-child(1):hover .icon4{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4 .icon4 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1.1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover .icon4 a{
+		color: white;
+	  }
+	  .wrapper4 .button4 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper4 .button4 a {
+		  text-decoration: none;
+	  }
+	  .wrapper2 .button2{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover{
+		width: 150px;
+	  }
+	  .wrapper2 .button2 .icon2{
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2:nth-child(1):hover .icon2{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2 .icon2 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover .icon2 a{
+		color: white;
+	  }
+	  .wrapper2 .button2 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper2 .button2 a {
+		  text-decoration: none;
+	  }
+	  .wrapper3 .button3 {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover{
+		width: 150px;
+	  }
+	  .wrapper3 .button3 .icon3 {
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3:nth-child(1):hover .icon3{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3 .icon3 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover .icon3 a{
+		color: white;
+	  }
+	  .wrapper3 .button3 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper3 .button3 a {
+		  text-decoration: none;
+	  }
+
+}
+
+/* ---------- ESTILOS SIN HOVER (SIN RESPUESTA) ---------*/
+
+@media (hover: none) and (max-width: 960px) and (min-width: 790px) and (orientation: landscape) {
+
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.card {
+		height: 340px;
+	}
+	.botonestitular a:hover {
+		color: #00A19A;
+		background: white;
+	}
+	.imagen-card {
+		width: 160px;
+		height: 160px;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(50px);
+	}
+	.info-card {
+		transform: translateY(25px);
+		filter: opacity(100);
+	}
+	.boton-card {
+		transform: translateY(30px);
+		filter: opacity(100);
+	}
+	.boton-card a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+	}
+	.wrapper4 .button4:hover {
+		width: 50px;
+	}
+	.wrapper4 .button4:nth-child(1):hover .icon4 {
+		background: #2B2D42;
+	}
+	.wrapper2 .button2:hover {
+		width: 50px;
+	}
+	.wrapper2 .button2:nth-child(1):hover .icon2 {
+		background: #2B2D42;
+	}
+	.wrapper3 .button3:hover {
+		width: 50px;
+	}
+	.wrapper3 .button3:nth-child(1):hover .icon3 {
+		background: #2B2D42;
+	}
+
+}
+
+/*--------- CELULARES MEDIANOS HORIZONTALMENTE -------- */
+
+@media screen and (max-width: 789px) and (min-width: 665px) and (orientation: landscape)  {
+
+	.contenedor-menu {
+		width: 630px;
+		padding: 2% 0;
+	}
+	nav.sticky .contenedor-menu {
+		width: 630px;
+		padding: 0.7% 0;
+	}
+	.logo {
+		width: 250px;
+		transition: all 300ms ease;
+	}
+	nav.sticky .logo {
+		width: 250px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 74px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	nav.sticky .menu {
+		top: 57px;
+		margin-left: 0;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.7em;
+		margin: 0 0;
+		margin-top: 4%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	nav.sticky .menu a {
+		font-size: 2.7em;
+		color: white;
+	}
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.menu .boton1 {
+		width: 50%;
+		padding: 1% 0;
+	}
+	.menu .boton2 {
+		width: 50%;
+		padding: 1% 0;
+	}
+	.menu .boton3 {
+		width: 50%;
+		padding: 1% 0;
+	}
+	nav.sticky .menu .boton1,
+	nav.sticky .menu .boton3 {
+		padding: 1% 0;
+	}
+	nav.sticky .menu .boton2 {
+		padding: 1% 0;
+	}
+
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+	nav.sticky #icon {
+		display: block;
+		color: #2B2D42;
+	}
+
+
+	.portada {
+		width: 630px;
+		padding-top: 11%;
+		transition: all 300ms ease;
+	}
+	.titular h1 {
+		font-size: 6.2em;
+	}
+	.titular h3 {
+		font-size: 3em;
+	}
+	.botonestitular .botontitular1 {
+		width: 34%;
+		font-size: 3em;
+		padding: 1.7% 1.5%;
+	}
+	.imagenportada {
+		width: 42%;
+	}
+
+	.cartas {
+		width: 620px;
+	}
+	.nosotros h2{
+		font-size: 5.7em;	
+	}
+	.servicios {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 15%;
+		padding-bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.card {
+		width: 240px;
+		height: 130px;
+		margin: 0 3%;
+		margin-bottom: 17%;
+		transition: .5s ease all;
+	}
+	.card:hover {
+		height: 330px;
+	}
+	.imagen-card {
+		width: 120px;
+		height: 120px;
+		transition: .5s ease all;
+	}
+	.card:hover .imagen-card {
+		width: 150px;
+		height: 150px;
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(110px);
+		transition: .5s ease all;
+	}
+	.card:hover .contenido-card .detalles-card {
+		transform: translateY(45px);
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card h3 {
+		font-size: 3.8em;
+	}
+	.info-card {
+		transform: translateY(35px);
+		filter: opacity(0);
+		transition: .5s ease all;
+	}
+	.info-card p {
+		font-size: 3.3em;
+	}
+	.card:hover .info-card {
+		transform: translateY(25px);
+		filter: opacity(100);
+		transition: 1.5s ease all;
+	}
+	.boton-card {
+		transform: translateY(35px);
+		filter: opacity(0);
+		transition: .5s ease all;
+	}
+	.card:hover .boton-card {
+		filter: opacity(100);
+		transform: translateY(25px);
+		transition: 1.5s ease all;
+	}
+
+	.testimonios {
+		width: 610px;
+		height: auto;
+		margin-top: -8%;
+	}
+	.titulo-testimonios h2{	
+		font-size: 5.7em;	
+	}
+	.slider-test {
+		width: 100%;
+		padding: 6% 0;
+	}
+	.slider-test h3{
+		font-size: 3.6em;
+	}
+	.slider-test p{
+		font-size: 3.2em;
+	}
+	.logopie {
+		width: 38%;
+		height: auto;
+	}
+	.contacto {
+		width: 36%;
+	}
+	.contenedor-pie {
+		width: 700px;
+	}
+	.piedepagina {
+		width: 610px;
+	}
+	.wrapper4 .button4{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover{
+		width: 150px;
+	  }
+	  .wrapper4 .button4 .icon4{
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4:nth-child(1):hover .icon4{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4 .icon4 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1.1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover .icon4 a{
+		color: white;
+	  }
+	  .wrapper4 .button4 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper4 .button4 a {
+		  text-decoration: none;
+	  }
+	  .wrapper2 .button2{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover{
+		width: 150px;
+	  }
+	  .wrapper2 .button2 .icon2{
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2:nth-child(1):hover .icon2{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2 .icon2 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover .icon2 a{
+		color: white;
+	  }
+	  .wrapper2 .button2 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper2 .button2 a {
+		  text-decoration: none;
+	  }
+	  .wrapper3 .button3 {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover{
+		width: 150px;
+	  }
+	  .wrapper3 .button3 .icon3 {
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3:nth-child(1):hover .icon3{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3 .icon3 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover .icon3 a{
+		color: white;
+	  }
+	  .wrapper3 .button3 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper3 .button3 a {
+		  text-decoration: none;
+	  }
+
+}
+
+/* ---------- ESTILOS SIN HOVER (SIN RESPUESTA) ---------*/
+
+@media (hover: none) and (max-width: 789px) and (min-width: 665px) and (orientation: landscape) {
+
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.card {
+		height: 330px;
+	}
+	.botonestitular a:hover {
+		color: #00A19A;
+		background: white;
+	}
+	.imagen-card {
+		width: 150px;
+		height: 150px;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(45px);
+	}
+	.info-card {
+		transform: translateY(25px);
+		filter: opacity(100);
+	}
+	.boton-card {
+		transform: translateY(25px);
+		filter: opacity(100);
+	}
+	.boton-card a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+	}
+	.wrapper4 .button4:hover {
+		width: 50px;
+	}
+	.wrapper4 .button4:nth-child(1):hover .icon4 {
+		background: #2B2D42;
+	}
+	.wrapper2 .button2:hover {
+		width: 50px;
+	}
+	.wrapper2 .button2:nth-child(1):hover .icon2 {
+		background: #2B2D42;
+	}
+	.wrapper3 .button3:hover {
+		width: 50px;
+	}
+	.wrapper3 .button3:nth-child(1):hover .icon3 {
+		background: #2B2D42;
+	}
+
+}
+
+/*--------- CELULARES PEQUEÑOS HORIZONTALMENTE -------- */
+
+@media screen and (max-width: 668px) and (min-width: 560px) and (orientation: landscape)  {
+
+	.contenedor-menu {
+		width: 530px;
+		padding: 3% 0;
+	}
+	nav.sticky .contenedor-menu {
+		width: 530px;
+		padding: 1.4% 0;
+	}
+	.logo {
+		width: 220px;
+		transition: all 300ms ease;
+	}
+	nav.sticky .logo {
+		width: 220px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 75px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	nav.sticky .menu {
+		top: 50px;
+		margin-left: 0;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.5em;
+		margin: 0 0;
+		margin-top: 4%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	nav.sticky .menu a {
+		font-size: 2.5em;
+		color: white;
+	}
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.menu .boton1 {
+		width: 50%;
+		padding: 1% 0;
+	}
+	.menu .boton2 {
+		width: 50%;
+		padding: 1% 0;
+	}
+	.menu .boton3 {
+		width: 50%;
+		padding: 1% 0;
+	}
+	nav.sticky .menu .boton1,
+	nav.sticky .menu .boton3 {
+		padding: 1% 0;
+	}
+	nav.sticky .menu .boton2 {
+		padding: 1% 0;
+	}
+
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+	nav.sticky #icon {
+		display: block;
+		color: #2B2D42;
+	}
+
+
+	.portada {
+		width: 545px;
+		padding-top: 11%;
+		transition: all 300ms ease;
+	}
+	.titular h1 {
+		font-size: 5.7em;
+	}
+	.titular h3 {
+		font-size: 2.6em;
+	}
+	.botonestitular .botontitular1 {
+		width: 35%;
+		font-size: 2.7em;
+		padding: 1.7% 1.5%;
+	}
+	.imagenportada {
+		width: 42%;
+	}
+
+	.cartas {
+		width: 520px;
+	}
+	.nosotros h2{
+		font-size: 5em;	
+	}
+	.servicios {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 15%;
+		padding-bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.card {
+		width: 250px;
+		height: 130px;
+		margin: 0 3%;
+		margin-bottom: 24%;
+		transition: .5s ease all;
+	}
+	.card:hover {
+		height: 310px;
+	}
+	.imagen-card {
+		width: 130px;
+		height: 130px;
+		transition: .5s ease all;
+	}
+	.card:hover .imagen-card {
+		width: 150px;
+		height: 150px;
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(115px);
+		transition: .5s ease all;
+	}
+	.card:hover .contenido-card .detalles-card {
+		transform: translateY(50px);
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card h3 {
+		font-size: 3.8em;
+	}
+	.info-card {
+		transform: translateY(35px);
+		filter: opacity(0);
+		transition: .5s ease all;
+	}
+	.info-card p {
+		font-size: 3.2em;
+	}
+	.card:hover .info-card {
+		transform: translateY(25px);
+		filter: opacity(100);
+		transition: 1.5s ease all;
+	}
+	.boton-card {
+		transform: translateY(35px);
+		filter: opacity(0);
+		transition: .5s ease all;
+	}
+	.card:hover .boton-card {
+		filter: opacity(100);
+		transform: translateY(25px);
+		transition: 1.5s ease all;
+	}
+
+	.testimonios {
+		width: 540px;
+		height: auto;
+		margin-top: -12%;
+	}
+	.titulo-testimonios h2{	
+		font-size: 5.5em;	
+	}
+	.slider-test {
+		width: 100%;
+		padding: 6% 0;
+	}
+	.slider-test h3{
+		font-size: 3.5em;
+	}
+	.slider-test p{
+		font-size: 3em;
+	}
+	.logopie {
+		width: 42%;
+		height: auto;
+	}
+	.contacto {
+		width: 42%;
+	}
+	.contenedor-pie {
+		width: 590px;
+	}
+	.piedepagina {
+		width: 540px;
+	}
+	.wrapper4 .button4{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover{
+		width: 150px;
+	  }
+	  .wrapper4 .button4 .icon4{
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4:nth-child(1):hover .icon4{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4 .icon4 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1.1);
+		  line-height: 40px;
+		font-size: 20px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover .icon4 a{
+		color: white;
+	  }
+	  .wrapper4 .button4 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper4 .button4 a {
+		  text-decoration: none;
+	  }
+	  .wrapper2 .button2{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover{
+		width: 150px;
+	  }
+	  .wrapper2 .button2 .icon2{
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2:nth-child(1):hover .icon2{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2 .icon2 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 20px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover .icon2 a{
+		color: white;
+	  }
+	  .wrapper2 .button2 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper2 .button2 a {
+		  text-decoration: none;
+	  }
+	  .wrapper3 .button3 {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover{
+		width: 150px;
+	  }
+	  .wrapper3 .button3 .icon3 {
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3:nth-child(1):hover .icon3{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3 .icon3 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 20px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover .icon3 a{
+		color: white;
+	  }
+	  .wrapper3 .button3 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 3em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper3 .button3 a {
+		  text-decoration: none;
+	  }
+
+}
+
+/* ---------- ESTILOS SIN HOVER (SIN RESPUESTA) ---------*/
+
+@media (hover: none) and (max-width: 668px) and (min-width: 560px) and (orientation: landscape) {
+
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.card {
+		height: 310px;
+	}
+	.botonestitular a:hover {
+		color: #00A19A;
+		background: white;
+	}
+	.imagen-card {
+		width: 150px;
+		height: 150px;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(50px);
+	}
+	.info-card {
+		transform: translateY(25px);
+		filter: opacity(100);
+	}
+	.boton-card {
+		transform: translateY(25px);
+		filter: opacity(100);
+	}
+	.boton-card a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+	}
+	.wrapper4 .button4:hover {
+		width: 50px;
+	}
+	.wrapper4 .button4:nth-child(1):hover .icon4 {
+		background: #2B2D42;
+	}
+	.wrapper2 .button2:hover {
+		width: 50px;
+	}
+	.wrapper2 .button2:nth-child(1):hover .icon2 {
+		background: #2B2D42;
+	}
+	.wrapper3 .button3:hover {
+		width: 50px;
+	}
+	.wrapper3 .button3:nth-child(1):hover .icon3 {
+		background: #2B2D42;
+	}
+
+}
+
+/*--------- TABLES GRANDES VERTICALMENTE -------- */
+
+@media screen and (max-width: 1024px) and (min-width: 835px) and (orientation: portrait)  {
+
+	.contenedor-menu {
+		width: 850px;
+		padding: 1.7% 0;
+	}
+	nav.sticky .contenedor-menu {
+		width: 850px;
+		padding: 0.8% 0;
+	}
+	.logo {
+		width: 320px;
+		transition: all 300ms ease;
+	}
+	nav.sticky .logo {
+		width: 320px;
+		transition: all 300ms ease;
+	}
+	.menu a {
+		font-size: 2.8em;
+		transition: .5s ease all;
+	}
+	nav.sticky .menu a {
+		font-size: 2.6em;
+	}
+	.menu .boton1 {
+		width: 18%;
+		padding: 1% 2%;
+	}
+	.menu .boton2 {
+		width: 30%;
+		padding: 1% 2%;
+	}
+	.menu .boton3 {
+		width: 17%;
+		padding: 1% 2%;
+	}
+	
+	.portada {
+		width: 680px;
+		height: auto;
+		padding:  0 0;
+		padding-top: 17%;
+		padding-bottom: 8%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: all 300ms ease;
+	}
+	.titular {
+		width: 60%;
+		height: auto;
+		margin-top: -7.5%;
+	}
+	.titular h1 {
+		margin: 0 0;
+		font-size: 6.5em;
+		text-align: center;
+		margin-bottom: 8%;
+	}
+	.titular h3 {
+		text-align: center;
+		font-size: 3.8em;
+		margin: 0 0;
+		margin-bottom: 4%;
+	}
+	.tagline {
+		width: 100%;
+		background: white;
+		color: #00A19A;
+		font-size: 3.8em;
+		padding: 2.5% 0;
+		border-radius: 20px;
+		font-weight: 800;
+	}
+	.consulta {
+		width: 100%;
+		padding: 2% 0;
+	}
+	.imagenportada-tablet-movil {
+		display: block;
+		width: 100%;
+	}
+	.botonestitular {
+		width: 100%;
+		height: auto;
+		padding: 4% 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.botonestitular .botontitular1 {
+		font-size: 3.5em;
+		width: 30%;
+		padding: 1.5% 1.5%;
+	}
+	.imagenportada {
+		display: none;
+	}
+
+	.cartas {
+		width: 890px;
+	}
+	.nosotros h2{
+		font-size: 6em;	
+	}
+	.servicios {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 10%;
+		padding-bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.card {
+		width: 290px;
+		margin: 0 3%;
+		margin-bottom: 12%;
+		transition: .5s ease all;
+	}
+	.card:hover {
+		height: 350px;
+	}
+	.imagen-card {
+		width: 140px;
+		height: 140px;
+		transition: .5s ease all;
+	}
+	.card:hover .imagen-card {
+		width: 180px;
+		height: 180px;
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(115px);
+		transition: .5s ease all;
+	}
+	.card:hover .contenido-card .detalles-card {
+		transform: translateY(60px);
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card h3 {
+		font-size: 4.2em;
+	}
+	.info-card {
+		transform: translateY(45px);
+		filter: opacity(0);
+		transition: .5s ease all;
+	}
+	.card:hover .info-card {
+		transform: translateY(35px);
+		filter: opacity(100);
+		transition: 1.5s ease all;
+	}
+	.boton-card {
+		transform: translateY(45px);
+		filter: opacity(0);
+		transition: .5s ease all;
+	}
+	.card:hover .boton-card {
+		filter: opacity(100);
+		transform: translateY(35px);
+		transition: 1.5s ease all;
+	}
+
+	.testimonios {
+		width: 830px;
+		height: auto;
+		margin-top: -6%;
+	}
+	.slider-test {
+		width: 100%;
+		padding: 6% 0;
+	}
+	.slider-test h3 {
+		font-size: 3.7em;
+	}
+	.slider-test P {
+		font-size: 3.3em;
+	}
+	.logopie {
+		width: 31%;
+		height: auto;
+	}
+	.contacto {
+		width: 30%;
+	}
+	.contenedor-pie {
+		width: 950px;
+	}
+	.piedepagina {
+		width: 830px;
+	}
+}
+
+/* ---------- ESTILOS SIN HOVER (SIN RESPUESTA) ---------*/
+
+@media (hover: none) and (max-width: 1024px) and (min-width: 835px) and (orientation: portrait) {
+
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a:hover {
+		color: #2B2D42;
+		background: transparent;
+	}
+	.card {
+		height: 350px;
+	}
+	.botonestitular a:hover {
+		color: #00A19A;
+		background: white;
+	}
+	.imagen-card {
+		width: 180px;
+		height: 180px;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(60px);
+	}
+	.info-card {
+		transform: translateY(35px);
+		filter: opacity(100);
+	}
+	.boton-card {
+		transform: translateY(35px);
+		filter: opacity(100);
+	}
+	.boton-card a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+	}
+	.wrapper4 .button4:hover {
+		width: 50px;
+	}
+	.wrapper4 .button4:nth-child(1):hover .icon4 {
+		background: #2B2D42;
+	}
+	.wrapper2 .button2:hover {
+		width: 50px;
+	}
+	.wrapper2 .button2:nth-child(1):hover .icon2 {
+		background: #2B2D42;
+	}
+	.wrapper3 .button3:hover {
+		width: 50px;
+	}
+	.wrapper3 .button3:nth-child(1):hover .icon3 {
+		background: #2B2D42;
+	}
+
+}
+
+/*--------- TABLES MEDIANAS VERTICALMENTE -------- */
+
+@media screen and (max-width: 834px) and (min-width: 769px) and (orientation: portrait)  {
+
+	.contenedor-menu {
+		width: 700px;
+		padding: 1.7% 0;
+	}
+	nav.sticky .contenedor-menu {
+		width: 700px;
+		padding: 0.8% 0;
+	}
+	.logo {
+		width: 280px;
+		transition: all 300ms ease;
+	}
+	nav.sticky .logo {
+		width: 280px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	nav.sticky .menu {
+		top: 66px;
+		margin-left: 0;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.8em;
+		margin: 0 0;
+		margin-top: 4%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	nav.sticky .menu a {
+		font-size: 2.8em;
+		color: white;
+	}
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.menu .boton1 {
+		width: 50%;
+		padding: 1% 0;
+	}
+	.menu .boton2 {
+		width: 50%;
+		padding: 1% 0;
+	}
+	.menu .boton3 {
+		width: 50%;
+		padding: 1% 0;
+	}
+	nav.sticky .menu .boton1,
+	nav.sticky .menu .boton3 {
+		padding: 1% 0;
+	}
+	nav.sticky .menu .boton2 {
+		padding: 1% 0;
+	}
+
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+	nav.sticky #icon {
+		display: block;
+		color: #2B2D42;
+	}
+	
+	.portada {
+		width: 680px;
+		height: auto;
+		padding:  0 0;
+		padding-top: 20%;
+		padding-bottom: 8%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: all 300ms ease;
+	}
+	.titular {
+		width: 55%;
+		height: auto;
+		margin-top: -7.5%;
+	}
+	.titular h1 {
+		margin: 0 0;
+		font-size: 6.5em;
+		text-align: center;
+		margin-bottom: 8%;
+	}
+	.titular h3 {
+		text-align: center;
+		font-size: 3.8em;
+		margin: 0 0;
+		margin-bottom: 4%;
+	}
+	.tagline {
+		width: 100%;
+		background: white;
+		color: #00A19A;
+		font-size: 3.8em;
+		padding: 2.5% 0;
+		border-radius: 20px;
+		font-weight: 800;
+	}
+	.consulta {
+		width: 80%;
+		padding: 2% 10%;
+	}
+	.imagenportada-tablet-movil {
+		display: block;
+		width: 100%;
+	}
+	.botonestitular {
+		width: 100%;
+		height: auto;
+		padding: 4% 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.botonestitular .botontitular1 {
+		font-size: 3.5em;
+		width: 33%;
+		padding: 1.7% 1.5%;
+	}
+	.imagenportada {
+		display: none;
+	}
+
+	.cartas {
+		width: 690px;
+	}
+	.nosotros h2{
+		font-size: 6em;	
+	}
+	.servicios {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 12%;
+		padding-bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.card {
+		width: 270px;
+		height: 140px;
+		margin: 0 3%;
+		margin-bottom: 16%;
+		transition: .5s ease all;
+	}
+	.card:hover {
+		height: 330px;
+	}
+	.imagen-card {
+		width: 130px;
+		height: 130px;
+		transition: .5s ease all;
+	}
+	.card:hover .imagen-card {
+		width: 170px;
+		height: 170px;
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(110px);
+		transition: .5s ease all;
+	}
+	.card:hover .contenido-card .detalles-card {
+		transform: translateY(55px);
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card h3 {
+		font-size: 4.2em;
+	}
+	.info-card {
+		transform: translateY(40px);
+		filter: opacity(0);
+		transition: .5s ease all;
+	}
+	.info-card p {
+		font-size: 3.3em;
+	}
+	.card:hover .info-card {
+		transform: translateY(30px);
+		filter: opacity(100);
+		transition: 1.5s ease all;
+	}
+	.boton-card {
+		transform: translateY(40px);
+		filter: opacity(0);
+		transition: .5s ease all;
+	}
+	.card:hover .boton-card {
+		filter: opacity(100);
+		transform: translateY(30px);
+		transition: 1.5s ease all;
+	}
+
+	.testimonios {
+		width: 680px;
+		height: auto;
+		margin-top: -6%;
+	}
+	.slider-test {
+		width: 100%;
+		padding: 6% 0;
+	}
+	.slider-test h3{
+		font-size: 3.5em;
+	}
+	.slider-test p{
+		font-size: 3.1em;
+	}
+	.logopie {
+		width: 38%;
+		height: auto;
+	}
+	.contacto {
+		width: 35%;
+	}
+	.contenedor-pie {
+		width: 750px;
+	}
+	.piedepagina {
+		width: 680px;
+	}
+
+}
+
+/* ---------- ESTILOS SIN HOVER (SIN RESPUESTA) ---------*/
+
+@media (hover: none) and (max-width: 834px) and (min-width: 769px) and (orientation: portrait) {
+
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.card {
+		height: 330px;
+	}
+	.botonestitular a:hover {
+		color: #00A19A;
+		background: white;
+	}
+	.imagen-card {
+		width: 170px;
+		height: 170px;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(55px);
+	}
+	.info-card {
+		transform: translateY(30px);
+		filter: opacity(100);
+	}
+	.boton-card {
+		transform: translateY(30px);
+		filter: opacity(100);
+	}
+	.boton-card a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+	}
+	.wrapper4 .button4:hover {
+		width: 50px;
+	}
+	.wrapper4 .button4:nth-child(1):hover .icon4 {
+		background: #2B2D42;
+	}
+	.wrapper2 .button2:hover {
+		width: 50px;
+	}
+	.wrapper2 .button2:nth-child(1):hover .icon2 {
+		background: #2B2D42;
+	}
+	.wrapper3 .button3:hover {
+		width: 50px;
+	}
+	.wrapper3 .button3:nth-child(1):hover .icon3 {
+		background: #2B2D42;
+	}
+
+}
+
+/*--------- TABLES PEQUEÑAS VERTICALMENTE -------- */
+
+@media screen and (max-width: 769px) and (min-width: 430px) and (orientation: portrait)  {
+
+	.contenedor-menu {
+		width: 640px;
+		padding: 1.7% 0;
+	}
+	nav.sticky .contenedor-menu {
+		width: 640px;
+		padding: 0.8% 0;
+	}
+	.logo {
+		width: 280px;
+		transition: all 300ms ease;
+	}
+	nav.sticky .logo {
+		width: 280px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	nav.sticky .menu {
+		top: 65px;
+		margin-left: 0;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.8em;
+		margin: 0 0;
+		margin-top: 4%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	nav.sticky .menu a {
+		font-size: 2.8em;
+		color: white;
+	}
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.menu .boton1 {
+		width: 50%;
+		padding: 1% 0;
+	}
+	.menu .boton2 {
+		width: 50%;
+		padding: 1% 0;
+	}
+	.menu .boton3 {
+		width: 50%;
+		padding: 1% 0;
+	}
+	nav.sticky .menu .boton1,
+	nav.sticky .menu .boton3 {
+		padding: 1% 0;
+	}
+	nav.sticky .menu .boton2 {
+		padding: 1% 0;
+	}
+
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+	nav.sticky #icon {
+		display: block;
+		color: #2B2D42;
+	}
+	
+	.portada {
+		width: 620px;
+		height: auto;
+		padding:  0 0;
+		padding-top: 21%;
+		padding-bottom: 8%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: all 300ms ease;
+	}
+	.titular {
+		width: 55%;
+		height: auto;
+		margin-top: -7.5%;
+	}
+	.titular h1 {
+		margin: 0 0;
+		font-size: 6em;
+		text-align: center;
+		margin-bottom: 8%;
+	}
+	.titular h3 {
+		text-align: center;
+		font-size: 3.8em;
+		margin: 0 0;
+		margin-bottom: 4%;
+	}
+	.tagline {
+		width: 70%;
+		background: white;
+		color: #00A19A;
+		font-size: 3.8em;
+		padding: 2.5% 15%;
+		border-radius: 20px;
+		font-weight: 800;
+	}
+	.consulta {
+		width: 80%;
+		padding: 2% 10%;
+	}
+	.imagenportada-tablet-movil {
+		display: block;
+		width: 100%;
+	}
+	.botonestitular {
+		width: 100%;
+		height: auto;
+		padding: 4% 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.botonestitular .botontitular1 {
+		font-size: 3.5em;
+		width: 36%;
+		padding: 1.7% 1.5%;
+	}
+	.imagenportada {
+		display: none;
+	}
+
+	.cartas {
+		width: 630px;
+	}
+	.nosotros h2{
+		font-size: 5.8em;	
+	}
+	.servicios {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 12%;
+		padding-bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.card {
+		width: 250px;
+		height: 140px;
+		margin: 0 3%;
+		margin-bottom: 16%;
+		transition: .5s ease all;
+	}
+	.card:hover {
+		height: 330px;
+	}
+	.imagen-card {
+		width: 130px;
+		height: 130px;
+		transition: .5s ease all;
+	}
+	.card:hover .imagen-card {
+		width: 160px;
+		height: 160px;
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(115px);
+		transition: .5s ease all;
+	}
+	.card:hover .contenido-card .detalles-card {
+		transform: translateY(55px);
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card h3 {
+		font-size: 3.8em;
+	}
+	.info-card {
+		transform: translateY(40px);
+		filter: opacity(0);
+		transition: .5s ease all;
+	}
+	.info-card p {
+		font-size: 3.3em;
+	}
+	.card:hover .info-card {
+		transform: translateY(30px);
+		filter: opacity(100);
+		transition: 1.5s ease all;
+	}
+	.boton-card {
+		transform: translateY(40px);
+		filter: opacity(0);
+		transition: .5s ease all;
+	}
+	.card:hover .boton-card {
+		filter: opacity(100);
+		transform: translateY(30px);
+		transition: 1.5s ease all;
+	}
+
+	.testimonios {
+		width: 620px;
+		height: auto;
+		margin-top: -6%;
+	}
+	.titulo-testimonios h2 {
+		font-size: 5.8em;
+	}
+	.slider-test {
+		width: 100%;
+		padding: 6% 0;
+	}
+	.slider-test h3{
+		font-size: 3.4em;
+	}
+	.slider-test p{
+		font-size: 3em;
+	}
+	.logopie {
+		width: 40%;
+		height: auto;
+	}
+	.contacto {
+		width: 38%;
+	}
+	.contenedor-pie {
+		width: 690px;
+	}
+	.piedepagina {
+		width: 620px;
+	}
+	.wrapper4 .button4{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover{
+		width: 150px;
+	  }
+	  .wrapper4 .button4 .icon4{
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4:nth-child(1):hover .icon4{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4 .icon4 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover .icon4 a{
+		color: white;
+	  }
+	  .wrapper4 .button4 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.5em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper4 .button4 a {
+		  text-decoration: none;
+	  }
+	  .wrapper2 .button2{
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover{
+		width: 150px;
+	  }
+	  .wrapper2 .button2 .icon2{
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2:nth-child(1):hover .icon2{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2 .icon2 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover .icon2 a{
+		color: white;
+	  }
+	  .wrapper2 .button2 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.5em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper2 .button2 a {
+		  text-decoration: none;
+	  }
+	  .wrapper3 .button3 {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover{
+		width: 150px;
+	  }
+	  .wrapper3 .button3 .icon3 {
+		display: inline-flex;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 40px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3:nth-child(1):hover .icon3{
+		background: #00A19A;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3 .icon3 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 40px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover .icon3 a{
+		color: white;
+	  }
+	  .wrapper3 .button3 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.8em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper3 .button3 a {
+		  text-decoration: none;
+	  }
+
+}
+
+/* ---------- ESTILOS SIN HOVER (SIN RESPUESTA) ---------*/
+
+@media (hover: none) and (max-width: 769px) and (min-width: 430px) and (orientation: portrait) {
+
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.card {
+		height: 330px;
+	}
+	.botonestitular a:hover {
+		color: #00A19A;
+		background: white;
+	}
+	.imagen-card {
+		width: 160px;
+		height: 160px;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(55px);
+	}
+	.info-card {
+		transform: translateY(30px);
+		filter: opacity(100);
+	}
+	.boton-card {
+		transform: translateY(30px);
+		filter: opacity(100);
+	}
+	.boton-card a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+	}
+	.wrapper4 .button4:hover {
+		width: 50px;
+	}
+	.wrapper4 .button4:nth-child(1):hover .icon4 {
+		background: #2B2D42;
+	}
+	.wrapper2 .button2:hover {
+		width: 50px;
+	}
+	.wrapper2 .button2:nth-child(1):hover .icon2 {
+		background: #2B2D42;
+	}
+	.wrapper3 .button3:hover {
+		width: 50px;
+	}
+	.wrapper3 .button3:nth-child(1):hover .icon3 {
+		background: #2B2D42;
+	}
+
+}
+
+/* ---------- CELULARES GRANDES VERTICALMENTE ---------*/
+
+@media screen and (max-width: 429px) and (min-width: 391px) and (orientation: portrait)  {
+
+	.contenedor-menu {
+		width: 360px;
+		padding: 4% 0;
+	}
+	nav.sticky .contenedor-menu {
+		width: 360px;
+		padding: 1.5% 0;
+	}
+	.logo {
+		width: 220px;
+		transition: all 300ms ease;
+	}
+	nav.sticky .logo {
+		width: 220px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 71px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	nav.sticky .menu {
+		top: 54px;
+		margin-left: 0;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.8em;
+		margin: 0 0;
+		margin-top: 6%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a {
+		font-size: 2.8em;
+		color: white;
+	}
+	nav.sticky .menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.menu .boton1 {
+		width: 60%;
+		padding: 1.7% 0;
+	}
+	.menu .boton2 {
+		width: 60%;
+		padding: 1.7% 0;
+	}
+	.menu .boton3 {
+		width: 60%;
+		padding: 1.7% 0;
+	}
+	nav.sticky .menu .boton1,
+	nav.sticky .menu .boton3 {
+		padding: 1.7% 0;
+	}
+	nav.sticky .menu .boton2 {
+		padding: 1.7% 0;
+	}
+
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+	nav.sticky #icon {
+		display: block;
+		color: #2B2D42;
+	}
+	
+	.portada {
+		width: 380px;
+		height: auto;
+		padding:  0 0;
+		padding-top: 28%;
+		padding-bottom: 8%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: all 300ms ease;
+	}
+	.titular {
+		width: 75%;
+		height: auto;
+		margin-top: -7.5%;
+	}
+	.titular h1 {
+		margin: 0 0;
+		font-size: 5em;
+		text-align: center;
+		margin-bottom: 8%;
+	}
+	.titular h3 {
+		text-align: center;
+		font-size: 3.4em;
+		margin: 0 0;
+		margin-bottom: 4%;
+	}
+	.tagline {
+		width: 70%;
+		background: white;
+		color: #00A19A;
+		font-size: 3.4em;
+		padding: 2.5% 15%;
+		border-radius: 20px;
+		font-weight: 800;
+	}
+	.consulta {
+		width: 80%;
+		padding: 2% 10%;
+	}
+	.imagenportada-tablet-movil {
+		display: block;
+		width: 100%;
+	}
+	.botonestitular {
+		width: 100%;
+		height: auto;
+		padding: 4% 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.botonestitular .botontitular1 {
+		font-size: 3.3em;
+		width: 39%;
+		padding: 1.7% 1.5%;
+	}
+	.botonestitular a:hover {
+		color: #00A19A;
+		background: white;
+		transition: .5s ease all;
+	}
+	.imagenportada {
+		display: none;
+	}
+
+	.cartas {
+		width: 350px;
+	}
+	.nosotros h2{
+		font-size: 5em;	
+	}
+	.servicios {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 22%;
+		padding-bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.card {
+		width: 270px;
+		height: 310px;
+		margin: 0 3%;
+		margin-bottom: 30%;
+		transition: .5s ease all;
+	}
+	.card:hover {
+		height: 310px;
+	}
+	.imagen-card {
+		width: 150px;
+		height: 150px;
+		transition: .5s ease all;
+	}
+	.card:hover .imagen-card {
+		width: 150px;
+		height: 150px;
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(45px);
+		transition: .5s ease all;
+	}
+	.card:hover .contenido-card .detalles-card {
+		transform: translateY(45px);
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card h3 {
+		font-size: 3.8em;
+	}
+	.info-card {
+		transform: translateY(25px);
+		filter: opacity(100);
+		transition: .5s ease all;
+	}
+	.info-card p {
+		font-size: 3.3em;
+	}
+	.card:hover .info-card {
+		transform: translateY(25px);
+		filter: opacity(100);
+		transition: 1.5s ease all;
+	}
+	.boton-card {
+		transform: translateY(27px);
+		filter: opacity(100);
+		transition: .5s ease all;
+	}
+	.boton-card a{
+		font-size: 3.1em;
+	}
+	.card:hover .boton-card {
+		filter: opacity(100);
+		transform: translateY(27px);
+		transition: 1.5s ease all;
+	}
+	.boton-card a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+
+	.testimonios {
+		width: 350px;
+		height: auto;
+		margin-top: -12%;
+	}
+	.titulo-testimonios h2 {
+		font-size: 5em;
+	}
+	.slider-test {
+		width: 100%;
+		padding: 6% 0;
+	}
+	.slider-test h3{
+		font-size: 3.4em;
+	}
+	.slider-test p{
+		font-size: 3em;
+	}
+	.logopie {
+		width: 50%;
+		height: auto;
+	}
+	.contacto {
+		width: 30%;
+	}
+	.contenedor-pie {
+		width: 380px;
+	}
+	.piedepagina {
+		width: 350px;
+		padding-top: 8%;
+		padding-bottom: 12%;
+	}
+	.wrapper4 .button4{
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 20px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover{
+		width: 35px;
+	  }
+	  .wrapper4 .button4 .icon4{
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4:nth-child(1):hover .icon4{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4 .icon4 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover .icon4 a{
+		color: white;
+	  }
+	  .wrapper4 .button4 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.5em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper4 .button4 a {
+		  text-decoration: none;
+	  }
+	  .wrapper2 .button2{
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 20px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover{
+		width: 35px;
+	  }
+	  .wrapper2 .button2 .icon2{
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2:nth-child(1):hover .icon2{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2 .icon2 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover .icon2 a{
+		color: white;
+	  }
+	  .wrapper2 .button2 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.5em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper2 .button2 a {
+		  text-decoration: none;
+	  }
+	  .wrapper3 .button3 {
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 20px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover{
+		width: 35px;
+	  }
+	  .wrapper3 .button3 .icon3 {
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3:nth-child(1):hover .icon3{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3 .icon3 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover .icon3 a{
+		color: white;
+	  }
+	  .wrapper3 .button3 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.8em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper3 .button3 a {
+		  text-decoration: none;
+	  }
+
+}
+
+/* ---------- CELULARES MEDIANOS VERTICALMENTE ---------*/
+
+@media screen and (max-width: 390px) and (min-width: 350px) and (orientation: portrait)  {
+
+	.contenedor-menu {
+		width: 330px;
+		padding: 5% 0;
+	}
+	nav.sticky .contenedor-menu {
+		width: 330px;
+		padding: 2% 0;
+	}
+	.logo {
+		width: 220px;
+		transition: all 300ms ease;
+	}
+	nav.sticky .logo {
+		width: 220px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 75px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	nav.sticky .menu {
+		top: 54px;
+		margin-left: 0;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.6em;
+		margin: 0 0;
+		margin-top: 6%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a {
+		font-size: 2.6em;
+		color: white;
+	}
+	nav.sticky .menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.menu .boton1 {
+		width: 60%;
+		padding: 1.7% 0;
+	}
+	.menu .boton2 {
+		width: 60%;
+		padding: 1.7% 0;
+	}
+	.menu .boton3 {
+		width: 60%;
+		padding: 1.7% 0;
+	}
+	nav.sticky .menu .boton1,
+	nav.sticky .menu .boton3 {
+		padding: 1.7% 0;
+	}
+	nav.sticky .menu .boton2 {
+		padding: 1.7% 0;
+	}
+
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+	nav.sticky #icon {
+		display: block;
+		color: #2B2D42;
+	}
+	
+	.portada {
+		width: 330px;
+		height: auto;
+		padding:  0 0;
+		padding-top: 35%;
+		padding-bottom: 12%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: all 300ms ease;
+	}
+	.titular {
+		width: 90%;
+		height: auto;
+		margin-top: -7.5%;
+	}
+	.titular h1 {
+		margin: 0 0;
+		font-size: 4.5em;
+		text-align: center;
+		margin-bottom: 8%;
+	}
+	.titular h3 {
+		text-align: center;
+		font-size: 3em;
+		margin: 0 0;
+		margin-bottom: 4%;
+	}
+	.tagline {
+		width: 100%;
+		background: white;
+		color: #00A19A;
+		font-size: 3.4em;
+		padding: 2.5% 0;
+		border-radius: 20px;
+		font-weight: 800;
+	}
+	.consulta {
+		width: 100%;
+		padding: 2% 0;
+	}
+	.imagenportada-tablet-movil {
+		display: block;
+		width: 100%;
+	}
+	.botonestitular {
+		width: 100%;
+		height: auto;
+		padding: 4% 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.botonestitular .botontitular1 {
+		font-size: 3.3em;
+		width: 41%;
+		padding: 1.9% 1.5%;
+	}
+	.botonestitular a:hover {
+		color: #00A19A;
+		background: white;
+		transition: .5s ease all;
+	}
+	.imagenportada {
+		display: none;
+	}
+
+	.cartas {
+		width: 330px;
+	}
+	.nosotros h2{
+		font-size: 4.5em;	
+	}
+	.servicios {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 25%;
+		padding-bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.card {
+		width: 240px;
+		height: 280px;
+		margin: 0 3%;
+		margin-bottom: 30%;
+		transition: .5s ease all;
+	}
+	.card:hover {
+		height: 280px;
+	}
+	.imagen-card {
+		width: 140px;
+		height: 140px;
+		transition: .5s ease all;
+	}
+	.card:hover .imagen-card {
+		width: 140px;
+		height: 140px;
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(40px);
+		transition: .5s ease all;
+	}
+	.card:hover .contenido-card .detalles-card {
+		transform: translateY(40px);
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card h3 {
+		font-size: 3.5em;
+	}
+	.info-card {
+		transform: translateY(20px);
+		filter: opacity(100);
+		transition: .5s ease all;
+	}
+	.info-card p {
+		font-size: 3em;
+	}
+	.card:hover .info-card {
+		transform: translateY(20px);
+		filter: opacity(100);
+		transition: 1.5s ease all;
+	}
+	.boton-card {
+		transform: translateY(20px);
+		filter: opacity(100);
+		transition: .5s ease all;
+	}
+	.card:hover .boton-card {
+		filter: opacity(100);
+		transform: translateY(20px);
+		transition: 1.5s ease all;
+	}
+	.boton-card a{
+		font-size: 2.8em;
+	}
+	.boton-card a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+
+	.testimonios {
+		width: 330px;
+		height: auto;
+		margin-top: -12%;
+	}
+	.titulo-testimonios h2 {
+		font-size: 5em;
+	}
+	.slider-test {
+		width: 100%;
+		padding: 6% 0;
+	}
+	.slider-test h3{
+		font-size: 3.4em;
+	}
+	.slider-test p{
+		font-size: 3em;
+	}
+	.logopie {
+		width: 50%;
+		height: auto;
+	}
+	.contacto {
+		width: 30%;
+	}
+	.contenedor-pie {
+		width: 350px;
+	}
+	.piedepagina {
+		width: 330px;
+		padding-top: 8%;
+		padding-bottom: 12%;
+	}
+	.wrapper4 .button4{
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover{
+		width: 35px;
+	  }
+	  .wrapper4 .button4 .icon4{
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4:nth-child(1):hover .icon4{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4 .icon4 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover .icon4 a{
+		color: white;
+	  }
+	  .wrapper4 .button4 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.5em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper4 .button4 a {
+		  text-decoration: none;
+	  }
+	  .wrapper2 .button2{
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover{
+		width: 35px;
+	  }
+	  .wrapper2 .button2 .icon2{
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2:nth-child(1):hover .icon2{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2 .icon2 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover .icon2 a{
+		color: white;
+	  }
+	  .wrapper2 .button2 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.5em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper2 .button2 a {
+		  text-decoration: none;
+	  }
+	  .wrapper3 .button3 {
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover{
+		width: 35px;
+	  }
+	  .wrapper3 .button3 .icon3 {
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3:nth-child(1):hover .icon3{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3 .icon3 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover .icon3 a{
+		color: white;
+	  }
+	  .wrapper3 .button3 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.8em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper3 .button3 a {
+		  text-decoration: none;
+	  }
+
+}
+
+/* ---------- CELULARES MEDIANOS VERTICALMENTE ---------*/
+
+@media screen and (max-width: 360px) and (min-width: 350px) and (orientation: portrait)  {
+
+	.contenedor-menu {
+		width: 320px;
+		padding: 5% 0;
+	}
+	nav.sticky .contenedor-menu {
+		width: 320px;
+		padding: 2% 0;
+	}
+	.logo {
+		width: 220px;
+		transition: all 300ms ease;
+	}
+	nav.sticky .logo {
+		width: 220px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 75px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	nav.sticky .menu {
+		top: 54px;
+		margin-left: 0;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.4em;
+		margin: 0 0;
+		margin-top: 6%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a {
+		font-size: 2.4em;
+		color: white;
+	}
+	nav.sticky .menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.menu .boton1 {
+		width: 60%;
+		padding: 1.7% 0;
+	}
+	.menu .boton2 {
+		width: 60%;
+		padding: 1.7% 0;
+	}
+	.menu .boton3 {
+		width: 60%;
+		padding: 1.7% 0;
+	}
+	nav.sticky .menu .boton1,
+	nav.sticky .menu .boton3 {
+		padding: 1.7% 0;
+	}
+	nav.sticky .menu .boton2 {
+		padding: 1.7% 0;
+	}
+
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+	nav.sticky #icon {
+		display: block;
+		color: #2B2D42;
+	}
+	
+	.portada {
+		width: 310px;
+		height: auto;
+		padding:  0 0;
+		padding-top: 31%;
+		padding-bottom: 8%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: all 300ms ease;
+	}
+	.titular {
+		width: 90%;
+		height: auto;
+		margin-top: -7.5%;
+	}
+	.titular h1 {
+		margin: 0 0;
+		font-size: 4.4em;
+		text-align: center;
+		margin-bottom: 8%;
+	}
+	.titular h3 {
+		text-align: center;
+		font-size: 2.8em;
+		margin: 0 0;
+		margin-bottom: 4%;
+	}
+	.tagline {
+		width: 100%;
+		background: white;
+		color: #00A19A;
+		padding: 2.5% 0;
+		border-radius: 20px;
+		font-weight: 800;
+	}
+	.consulta {
+		width: 100%;
+		padding: 2% 0;
+	}
+	.imagenportada-tablet-movil {
+		display: block;
+		width: 100%;
+	}
+	.botonestitular {
+		width: 100%;
+		height: auto;
+		padding: 4% 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.botonestitular .botontitular1 {
+		font-size: 3em;
+		width: 41%;
+		padding: 1.9% 1.5%;
+	}
+	.botonestitular a:hover {
+		color: #00A19A;
+		background: white;
+		transition: .5s ease all;
+	}
+	.imagenportada {
+		display: none;
+	}
+
+	.cartas {
+		width: 310px;
+	}
+	.nosotros h2{
+		font-size: 4em;	
+	}
+	.servicios {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 27%;
+		padding-bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.card {
+		width: 240px;
+		height: 250px;
+		margin: 0 3%;
+		margin-bottom: 30%;
+		transition: .5s ease all;
+	}
+	.card:hover {
+		height: 250px;
+	}
+	.imagen-card {
+		width: 130px;
+		height: 130px;
+		transition: .5s ease all;
+	}
+	.card:hover .imagen-card {
+		width: 130px;
+		height: 130px;
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(40px);
+		transition: .5s ease all;
+	}
+	.card:hover .contenido-card .detalles-card {
+		transform: translateY(40px);
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card h3 {
+		font-size: 3.2em;
+	}
+	.info-card {
+		transform: translateY(20px);
+		filter: opacity(100);
+		transition: .5s ease all;
+	}
+	.info-card p {
+		font-size: 2.8em;
+	}
+	.card:hover .info-card {
+		transform: translateY(20px);
+		filter: opacity(100);
+		transition: 1.5s ease all;
+	}
+	.boton-card {
+		transform: translateY(20px);
+		filter: opacity(100);
+		transition: .5s ease all;
+	}
+	.card:hover .boton-card {
+		filter: opacity(100);
+		transform: translateY(20px);
+		transition: 1.5s ease all;
+	}
+	.boton-card a{
+		font-size: 2.6em;
+	}
+	.boton-card a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+
+	.testimonios {
+		width: 310px;
+		height: auto;
+		margin-top: -15%;
+	}
+	.titulo-testimonios h2 {
+		font-size: 4em;
+	}
+	.slider-test {
+		width: 100%;
+		padding: 6% 0;
+	}
+	.slider-test h3{
+		font-size: 3.3em;
+	}
+	.slider-test p{
+		font-size: 2.9em;
+	}
+	.logopie {
+		width: 50%;
+		height: auto;
+	}
+	.contacto {
+		width: 30%;
+	}
+	.contenedor-pie {
+		width: 330px;
+	}
+	.piedepagina {
+		width: 310px;
+		padding-top: 9%;
+		padding-bottom: 14%;
+	}
+	.wrapper4 .button4{
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover{
+		width: 35px;
+	  }
+	  .wrapper4 .button4 .icon4{
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4:nth-child(1):hover .icon4{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4 .icon4 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover .icon4 a{
+		color: white;
+	  }
+	  .wrapper4 .button4 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.5em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper4 .button4 a {
+		  text-decoration: none;
+	  }
+	  .wrapper2 .button2{
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover{
+		width: 35px;
+	  }
+	  .wrapper2 .button2 .icon2{
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2:nth-child(1):hover .icon2{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2 .icon2 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover .icon2 a{
+		color: white;
+	  }
+	  .wrapper2 .button2 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.5em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper2 .button2 a {
+		  text-decoration: none;
+	  }
+	  .wrapper3 .button3 {
+		display: inline-block;
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover{
+		width: 35px;
+	  }
+	  .wrapper3 .button3 .icon3 {
+		display: inline-flex;
+		height: 35px;
+		width: 35px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 35px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3:nth-child(1):hover .icon3{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3 .icon3 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 35px;
+		font-size: 18px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover .icon3 a{
+		color: white;
+	  }
+	  .wrapper3 .button3 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.8em;
+		margin-left: 10px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper3 .button3 a {
+		  text-decoration: none;
+	  }
+
+}
+
+/* ---------- CELULARES PEQUEÑOS VERTICALMENTE ---------*/
+
+@media screen and (max-width: 349px) and (min-width: 310px) and (orientation: portrait)  {
+
+	.contenedor-menu {
+		width: 280px;
+		padding: 6% 0;
+	}
+	nav.sticky .contenedor-menu {
+		width: 280px;
+		padding: 2% 0;
+	}
+	.logo {
+		width: 220px;
+		transition: all 300ms ease;
+	}
+	nav.sticky .logo {
+		width: 220px;
+		transition: all 300ms ease;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2B2D42;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+		transition: all 300ms ease;
+	}
+	nav.sticky .menu {
+		top: 54px;
+		margin-left: 0;
+		transition: all 300ms ease;
+	}
+	.menu.show {
+		left: 0;
+	}
+	.menu a {
+		font-size: 2.3em;
+		margin: 0 0;
+		margin-top: 6%;
+		margin-bottom: 0.5%;
+		transition: .5s ease all;
+	}
+	.menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	nav.sticky .menu a {
+		font-size: 2.3em;
+		color: white;
+	}
+	nav.sticky .menu a:hover {
+		color: white;
+		background: transparent;
+	}
+	.menu .boton1 {
+		width: 60%;
+		padding: 1.7% 0;
+	}
+	.menu .boton2 {
+		width: 60%;
+		padding: 1.7% 0;
+	}
+	.menu .boton3 {
+		width: 60%;
+		padding: 1.7% 0;
+	}
+	nav.sticky .menu .boton1,
+	nav.sticky .menu .boton3 {
+		padding: 1.7% 0;
+	}
+	nav.sticky .menu .boton2 {
+		padding: 1.7% 0;
+	}
+
+	nav #icon {
+		display: block;
+		margin-right: 2%;
+	}
+	nav.sticky #icon {
+		display: block;
+		color: #2B2D42;
+	}
+	
+	.portada {
+		width: 280px;
+		height: auto;
+		padding:  0 0;
+		padding-top: 37%;
+		padding-bottom: 15%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: all 300ms ease;
+	}
+	.titular {
+		width: 90%;
+		height: auto;
+		margin-top: -7.5%;
+	}
+	.titular h1 {
+		margin: 0 0;
+		font-size: 4em;
+		text-align: center;
+		margin-bottom: 8%;
+	}
+	.titular h3 {
+		text-align: center;
+		font-size: 2.5em;
+		margin: 0 0;
+		margin-bottom: 4%;
+	}
+	.tagline {
+		width: 100%;
+		background: white;
+		color: #00A19A;
+		padding: 2.5% 0;
+		border-radius: 20px;
+		font-weight: 800;
+	}
+	.consulta {
+		width: 70%;
+		padding: 4% 15%;
+	}
+	.imagenportada-tablet-movil {
+		display: block;
+		width: 100%;
+	}
+	.botonestitular {
+		width: 100%;
+		height: auto;
+		padding: 4% 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.botonestitular .botontitular1 {
+		font-size: 3em;
+		width: 44%;
+		padding: 1.9% 1.5%;
+	}
+	.botonestitular a:hover {
+		color: #00A19A;
+		background: white;
+		transition: .5s ease all;
+	}
+	.imagenportada {
+		display: none;
+	}
+
+	.cartas {
+		width: 280px;
+	}
+	.nosotros h2{
+		font-size: 3.5em;	
+	}
+	.servicios {
+		width: 100%;
+		height: auto;
+		padding: 0 0;
+		padding-top: 30%;
+		padding-bottom: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.card {
+		width: 230px;
+		height: 240px;
+		margin: 0 3%;
+		margin-bottom: 34%;
+		transition: .5s ease all;
+	}
+	.card:hover {
+		height: 240px;
+	}
+	.imagen-card {
+		width: 120px;
+		height: 120px;
+		transition: .5s ease all;
+	}
+	.card:hover .imagen-card {
+		width: 120px;
+		height: 120px;
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card {
+		transform: translateY(35px);
+		transition: .5s ease all;
+	}
+	.card:hover .contenido-card .detalles-card {
+		transform: translateY(35px);
+		transition: .5s ease all;
+	}
+	.card .contenido-card .detalles-card h3 {
+		font-size: 3.2em;
+	}
+	.info-card {
+		transform: translateY(15px);
+		filter: opacity(100);
+		transition: .5s ease all;
+	}
+	.info-card p {
+		font-size: 2.8em;
+	}
+	.card:hover .info-card {
+		transform: translateY(15px);
+		filter: opacity(100);
+		transition: 1.5s ease all;
+	}
+	.boton-card {
+		transform: translateY(15px);
+		filter: opacity(100);
+		transition: .5s ease all;
+	}
+	.boton-card a{
+		font-size: 2.6em;
+	}
+	.card:hover .boton-card {
+		filter: opacity(100);
+		transform: translateY(15px);
+		transition: 1.5s ease all;
+	}
+	.boton-card a:hover {
+		color: white;
+		background: #00A19A;
+		border: #00A19A 2px solid;
+		transition: .3s ease all;
+	}
+
+	.testimonios {
+		width: 280px;
+		height: auto;
+		margin-top: -17%;
+	}
+	.titulo-testimonios h2 {
+		font-size: 3.5em;
+	}
+	.slider-test {
+		width: 100%;
+		padding: 6% 0;
+	}
+	.slider-test h3{
+		font-size: 3.2em;
+	}
+	.slider-test p{
+		font-size: 2.8em;
+	}
+	.logopie {
+		width: 50%;
+		height: auto;
+	}
+	.contacto {
+		width: 30%;
+	}
+	.contenedor-pie {
+		width: 300px;
+	}
+	.piedepagina {
+		width: 280px;
+		padding-top: 10%;
+		padding-bottom: 16%;
+	}
+	.wrapper4 .button4{
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover{
+		width: 30px;
+	  }
+	  .wrapper4 .button4 .icon4{
+		display: inline-flex;
+		height: 30px;
+		width: 30px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 30px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4:nth-child(1):hover .icon4{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper4 .button4 .icon4 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 30px;
+		font-size: 17px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:hover .icon4 a{
+		color: white;
+	  }
+	  .wrapper4 .button4 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.3em;
+		margin-left: 7px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper4 .button4:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper4 .button4 a {
+		  text-decoration: none;
+	  }
+	  .wrapper2 .button2{
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover{
+		width: 30px;
+	  }
+	  .wrapper2 .button2 .icon2{
+		display: inline-flex;
+		height: 30px;
+		width: 30px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 30px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2:nth-child(1):hover .icon2{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper2 .button2 .icon2 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 30px;
+		font-size: 17px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:hover .icon2 a{
+		color: white;
+	  }
+	  .wrapper2 .button2 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.3em;
+		margin-left: 7px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper2 .button2:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper2 .button2 a {
+		  text-decoration: none;
+	  }
+	  .wrapper3 .button3 {
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+		overflow: hidden;
+		background: #2B2D42;
+		border-radius: 50px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover{
+		width: 30px;
+	  }
+	  .wrapper3 .button3 .icon3 {
+		display: inline-flex;
+		height: 30px;
+		width: 30px;
+		text-align: center;
+		justify-content: center;
+		border-radius: 50px;
+		line-height: 30px;
+		box-sizing: border-box;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3:nth-child(1):hover .icon3{
+		background: #2B2D42;
+		transition: .3s ease-in-out all;
+	  }
+	  .wrapper3 .button3 .icon3 a{
+		  text-decoration: none;
+		  color: white;
+		  text-align: center;
+		  justify-content: center;
+		  transform: scale(1);
+		  line-height: 30px;
+		font-size: 17px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:hover .icon3 a{
+		color: white;
+	  }
+	  .wrapper3 .button3 span{
+		  font-family: 'Plus Jakarta Sans', sans-serif;
+		  font-weight: 700;
+		  font-size: 2.3em;
+		margin-left: 7px;
+		transition: all 0.3s ease-out;
+	  }
+	  .wrapper3 .button3:nth-child(1) span{
+		color: white;
+	  }
+	  .wrapper3 .button3 a {
+		  text-decoration: none;
+	  }
+
+}
